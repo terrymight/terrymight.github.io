@@ -1,1 +1,0 @@
-# terrymight.github.io
