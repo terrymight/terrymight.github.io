@@ -18,7 +18,7 @@ This document is a brief primer on using go templates."/>
 <meta property="og:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
 This document is a brief primer on using go templates." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://www.example.com/posts/hugo-template-primer/" />
+<meta property="og:url" content="https://terrymight.github.io/posts/hugo-template-primer/" />
 <meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
 <meta property="article:modified_time" content="2014-04-02T00:00:00+00:00" />
 
@@ -26,14 +26,14 @@ This document is a brief primer on using go templates." />
 
 
     
-      <base href="http://www.example.com/posts/hugo-template-primer/">
+      <base href="https://terrymight.github.io/posts/hugo-template-primer/">
     
     <title>
   (Hu)go Template Primer · TejiriMayone
 </title>
 
     
-      <link rel="canonical" href="http://www.example.com/posts/hugo-template-primer/">
+      <link rel="canonical" href="https://terrymight.github.io/posts/hugo-template-primer/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -43,7 +43,7 @@ This document is a brief primer on using go templates." />
     
       
       
-      <link rel="stylesheet" href="http://www.example.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="https://terrymight.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -54,8 +54,8 @@ This document is a brief primer on using go templates." />
 
     
     
-    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.57.2" />
   </head>
@@ -64,7 +64,7 @@ This document is a brief primer on using go templates." />
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="http://www.example.com/">
+    <a class="navigation-title" href="https://terrymight.github.io/">
       TejiriMayone
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -73,19 +73,19 @@ This document is a brief primer on using go templates." />
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://www.example.com/about/">About</a>
+            <a class="navigation-link" href="https://terrymight.github.io/about/">About</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://www.example.com/posts/">Blog</a>
+            <a class="navigation-link" href="https://terrymight.github.io/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://www.example.com/projects/">Projects</a>
+            <a class="navigation-link" href="https://terrymight.github.io/projects/">Projects</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="http://www.example.com/contact/">Contact me</a>
+            <a class="navigation-link" href="https://terrymight.github.io/contact/">Contact me</a>
           </li>
         
       
@@ -118,21 +118,21 @@ This document is a brief primer on using go templates." />
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="http://www.example.com/categories/development/">Development</a>
+    <a href="https://terrymight.github.io/categories/development/">Development</a>
       <span class="separator">•</span>
-    <a href="http://www.example.com/categories/golang/">golang</a></div>
+    <a href="https://terrymight.github.io/categories/golang/">golang</a></div>
 
           <div class="tags">
   <i class="fas fa-tag"></i>
-    <a href="http://www.example.com/tags/go/">go</a>
+    <a href="https://terrymight.github.io/tags/go/">go</a>
       <span class="separator">•</span>
-    <a href="http://www.example.com/tags/golang/">golang</a>
+    <a href="https://terrymight.github.io/tags/golang/">golang</a>
       <span class="separator">•</span>
-    <a href="http://www.example.com/tags/templates/">templates</a>
+    <a href="https://terrymight.github.io/tags/templates/">templates</a>
       <span class="separator">•</span>
-    <a href="http://www.example.com/tags/themes/">themes</a>
+    <a href="https://terrymight.github.io/tags/themes/">themes</a>
       <span class="separator">•</span>
-    <a href="http://www.example.com/tags/development/">development</a></div>
+    <a href="https://terrymight.github.io/tags/development/">development</a></div>
 
         </div>
       </header>
@@ -184,7 +184,7 @@ functions.</p>
 <p>Each go template has a struct (object) made available to it. In hugo each
 template is passed either a page or a node struct depending on which type of
 page you are rendering. More details are available on the
-<a href="http://www.example.com/layout/variables">variables</a> page.</p>
+<a href="https://terrymight.github.io/layout/variables">variables</a> page.</p>
 
 <p>A variable is accessed by referencing the variable name.</p>
 <div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;title&gt;{{ .Title }}&lt;/title&gt;</pre></div>
@@ -195,7 +195,7 @@ page you are rendering. More details are available on the
 
 <p>Go template ship with a few functions which provide basic functionality. The go
 template system also provides a mechanism for applications to extend the
-available functions with their own. <a href="http://www.example.com/layout/functions">Hugo template
+available functions with their own. <a href="https://terrymight.github.io/layout/functions">Hugo template
 functions</a> provide some additional functionality we believe
 are useful for building websites. Functions are called by using their name
 followed by the required parameters separated by spaces. Template
@@ -335,7 +335,7 @@ you want to inside of your templates.</p>
 <h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 
 <p>In each piece of content you can provide variables to be used by the
-templates. This happens in the <a href="http://www.example.com/content/front-matter">front matter</a>.</p>
+templates. This happens in the <a href="https://terrymight.github.io/content/front-matter">front matter</a>.</p>
 
 <p>An example of this is used in this documentation site. Most of the pages
 benefit from having the table of contents provided. Sometimes the TOC just
@@ -411,13 +411,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="http://www.example.com/posts/hugoisforlovers/">Getting Started with Hugo</a>
+              <a href="https://terrymight.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
             </li>
           
         
           
             <li>
-              <a href="http://www.example.com/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
+              <a href="https://terrymight.github.io/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
             </li>
           
         
@@ -435,7 +435,7 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="http://www.example.com/posts/render-latex-using-katex/">Render LaTeX using KaTeX</a>
+              <a href="https://terrymight.github.io/posts/render-latex-using-katex/">Render LaTeX using KaTeX</a>
             </li>
           
         
@@ -447,13 +447,13 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="http://www.example.com/posts/theme-demo/">Theme Demo</a>
+              <a href="https://terrymight.github.io/posts/theme-demo/">Theme Demo</a>
             </li>
           
         
           
             <li>
-              <a href="http://www.example.com/posts/creating-a-new-theme/">Creating a New Theme</a>
+              <a href="https://terrymight.github.io/posts/creating-a-new-theme/">Creating a New Theme</a>
             </li>
           
         
@@ -461,7 +461,7 @@ so, such as in this example:</p>
         
           
             <li>
-              <a href="http://www.example.com/posts/hugoisforlovers/">Getting Started with Hugo</a>
+              <a href="https://terrymight.github.io/posts/hugoisforlovers/">Getting Started with Hugo</a>
             </li>
           
         
