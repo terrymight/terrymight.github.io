@@ -4,52 +4,27 @@
   
   <url>
     <loc>https://terrymight.github.io/categories/</loc>
-    <lastmod>2019-08-31T12:28:09-07:00</lastmod>
+    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://terrymight.github.io/categories/development/</loc>
-    <lastmod>2019-08-31T12:28:09-07:00</lastmod>
+    <loc>https://terrymight.github.io/categories/develolpment/</loc>
+    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://terrymight.github.io/categories/golang/</loc>
-    <lastmod>2019-08-31T12:28:09-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/posts/how-to-upload-to-github/</loc>
-    <lastmod>2019-08-31T12:28:09-07:00</lastmod>
+    <loc>https://terrymight.github.io/posts/how-to-upload-to-github-using-git/</loc>
+    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://terrymight.github.io/posts/</loc>
-    <lastmod>2019-08-31T12:28:09-07:00</lastmod>
+    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://terrymight.github.io/</loc>
-    <lastmod>2019-08-31T12:28:09-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/series/hugo/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/series/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/series/theme/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/posts/theme-demo/</loc>
-    <lastmod>2017-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
   </url>
   
   <url>
@@ -62,6 +37,10 @@
   
   <url>
     <loc>https://terrymight.github.io/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://terrymight.github.io/series/</loc>
   </url>
   
   <url>

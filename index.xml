@@ -6,35 +6,19 @@
     <description>Recent content on TejiriMayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Aug 2019 12:28:09 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 09:50:09 -0800</lastBuildDate>
     
 	<atom:link href="https://terrymight.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to Upload to Github</title>
-      <link>https://terrymight.github.io/posts/how-to-upload-to-github/</link>
-      <pubDate>Sat, 31 Aug 2019 12:28:09 -0700</pubDate>
+      <title>How to Upload to Github Using Git</title>
+      <link>https://terrymight.github.io/posts/how-to-upload-to-github-using-git/</link>
+      <pubDate>Thu, 23 Jan 2020 09:50:09 -0800</pubDate>
       
-      <guid>https://terrymight.github.io/posts/how-to-upload-to-github/</guid>
-      <description>Create your Hugo configuration file Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the Hugo configuration documentation for details.
-Set your configuration publish folder to _site The default is for Jekyll to publish to _site and for Hugo to publish to public. If, like me, you have _site mapped to a git submodule on the gh-pages branch, you&amp;rsquo;ll want to do one of two alternatives:</description>
-    </item>
-    
-    <item>
-      <title>Theme Demo</title>
-      <link>https://terrymight.github.io/posts/theme-demo/</link>
-      <pubDate>Sun, 08 Jan 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://terrymight.github.io/posts/theme-demo/</guid>
-      <description>Style Demo h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading This is bold text
-This is bold text
-This is italic text
-This is italic text
-Deleted text
-This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$ and with math blocks:
-$$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$
-   Heading Another heading     text text   text text   text text     Block quotes are written like so.</description>
+      <guid>https://terrymight.github.io/posts/how-to-upload-to-github-using-git/</guid>
+      <description>How to upload to github using git with cmd or terminal What is git? Git is the most used modern version control system in the world today. A large amount of software project use git Git for version control. Git can handle everything from small to very large projects with speed and efficiency.
+Companies &amp;amp; Projects Using Git The list is long but am just going to provide a few common name we are all familiar with link to the project itself incase you are intrested in looking at the codebase.</description>
     </item>
     
     <item>
