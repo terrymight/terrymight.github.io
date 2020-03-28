@@ -6,10 +6,37 @@
     <description>Recent content in Categories on TejiriMayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jan 2020 09:50:09 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 07:10:57 -0500</lastBuildDate>
     
 	<atom:link href="https://terrymight.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Angular</title>
+      <link>https://terrymight.github.io/categories/angular/</link>
+      <pubDate>Wed, 25 Mar 2020 07:10:57 -0500</pubDate>
+      
+      <guid>https://terrymight.github.io/categories/angular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaScript</title>
+      <link>https://terrymight.github.io/categories/javascript/</link>
+      <pubDate>Wed, 25 Mar 2020 07:10:57 -0500</pubDate>
+      
+      <guid>https://terrymight.github.io/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>https://terrymight.github.io/categories/typescript/</link>
+      <pubDate>Wed, 25 Mar 2020 07:10:57 -0500</pubDate>
+      
+      <guid>https://terrymight.github.io/categories/typescript/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Develolpment</title>

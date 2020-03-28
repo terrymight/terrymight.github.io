@@ -6,10 +6,22 @@
     <description>Recent content on TejiriMayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jan 2020 09:50:09 -0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 07:10:57 -0500</lastBuildDate>
     
 	<atom:link href="https://terrymight.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Format BsDatePicker to TimeDate in Angular 9</title>
+      <link>https://terrymight.github.io/posts/how-format-bsdatepicker-to-timedate/</link>
+      <pubDate>Wed, 25 Mar 2020 07:10:57 -0500</pubDate>
+      
+      <guid>https://terrymight.github.io/posts/how-format-bsdatepicker-to-timedate/</guid>
+      <description>Introduction In these tutorial I will discuss on how to add datepicker and convert to dateTime/any formart in our Angular Forms.
+Getting Started BsDatepicker is a package found in ngx-bootstrap which contains all core (and not only) Bootstrap components powered by Angular.
+Installation instructions Install ngx-bootstrap from npm:
+npm install ngx-bootstrap --sav Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</description>
+    </item>
     
     <item>
       <title>How to Upload to Github Using Git</title>

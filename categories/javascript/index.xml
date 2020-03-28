@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on TejiriMayone</title>
-    <link>https://terrymight.github.io/posts/</link>
-    <description>Recent content in Posts on TejiriMayone</description>
+    <title>JavaScript on TejiriMayone</title>
+    <link>https://terrymight.github.io/categories/javascript/</link>
+    <description>Recent content in JavaScript on TejiriMayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 25 Mar 2020 07:10:57 -0500</lastBuildDate>
     
-	<atom:link href="https://terrymight.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://terrymight.github.io/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,16 +21,6 @@
 Getting Started BsDatepicker is a package found in ngx-bootstrap which contains all core (and not only) Bootstrap components powered by Angular.
 Installation instructions Install ngx-bootstrap from npm:
 npm install ngx-bootstrap --sav Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</description>
-    </item>
-    
-    <item>
-      <title>How to Upload to Github Using Git</title>
-      <link>https://terrymight.github.io/posts/how-to-upload-to-github-using-git/</link>
-      <pubDate>Thu, 23 Jan 2020 09:50:09 -0800</pubDate>
-      
-      <guid>https://terrymight.github.io/posts/how-to-upload-to-github-using-git/</guid>
-      <description>How to upload to github using git with cmd or terminal   What is git? Git is the most used modern version control system in the world today. A large amount of software project use git Git for version control. Git can handle everything from small to very large projects with speed and efficiency.
-Companies &amp;amp; Projects Using Git The list is long but am just going to provide a few common name we are all familiar with link to the project itself incase you are intrested in looking at the codebase.</description>
     </item>
     
   </channel>

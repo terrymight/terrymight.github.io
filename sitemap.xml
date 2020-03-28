@@ -3,8 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://terrymight.github.io/categories/angular/</loc>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://terrymight.github.io/categories/</loc>
-    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://terrymight.github.io/posts/how-format-bsdatepicker-to-timedate/</loc>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://terrymight.github.io/categories/javascript/</loc>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://terrymight.github.io/posts/</loc>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://terrymight.github.io/</loc>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://terrymight.github.io/categories/typescript/</loc>
+    <lastmod>2020-03-25T07:10:57-05:00</lastmod>
   </url>
   
   <url>
@@ -14,16 +44,6 @@
   
   <url>
     <loc>https://terrymight.github.io/posts/how-to-upload-to-github-using-git/</loc>
-    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/posts/</loc>
-    <lastmod>2020-01-23T09:50:09-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://terrymight.github.io/</loc>
     <lastmod>2020-01-23T09:50:09-08:00</lastmod>
   </url>
   
