@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Tejiri Mayone">
+    <meta name="description" content="Tejiri Mayone&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to create a simple Golang Server"/>
+<meta name="twitter:description" content="Introduction Am going to be showing you the go way of building a server.
+Requirement and assumed knowledge   Programming experience.
+  Some DOS command-line knowledge.
+  How to install go on your machine (see the Installation Instructions).
+  Any code editor (for me I will be using Visual Studio Code Editor because of it simplicity and looks).
+  if you just want to get along without having to install any of those you could use golang online compiler at https://play."/>
+
+    <meta property="og:title" content="How to create a simple Golang Server" />
+<meta property="og:description" content="Introduction Am going to be showing you the go way of building a server.
+Requirement and assumed knowledge   Programming experience.
+  Some DOS command-line knowledge.
+  How to install go on your machine (see the Installation Instructions).
+  Any code editor (for me I will be using Visual Studio Code Editor because of it simplicity and looks).
+  if you just want to get along without having to install any of those you could use golang online compiler at https://play." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://terrymight.github.io/posts/how-to-basic-server-in-go/" />
+<meta property="article:published_time" content="2020-10-22T15:26:35+01:00" />
+<meta property="article:modified_time" content="2020-10-22T15:26:35+01:00" />
+
+
+    
+      <base href="https://terrymight.github.io/posts/how-to-basic-server-in-go/">
+    
+    <title>
+  How to create a simple Golang Server · TejiriMayone
+</title>
+
+    
+      <link rel="canonical" href="https://terrymight.github.io/posts/how-to-basic-server-in-go/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="https://terrymight.github.io/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+
+    
+    
+    <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.74.3" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://terrymight.github.io/">
+      TejiriMayone
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://terrymight.github.io/about/">About</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://terrymight.github.io/posts/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://terrymight.github.io/projects/">Projects</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="https://terrymight.github.io/contact/">Contact me</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">How to create a simple Golang Server</h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fas fa-calendar"></i>
+              <time datetime='2020-10-22T15:26:35&#43;01:00'>
+                
+                October 22, 2020
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fas fa-clock"></i>
+              2 minutes read
+            </span>
+          </div>
+          <div class="categories">
+  <i class="fas fa-folder"></i>
+    <a href="https://terrymight.github.io/categories/golang/">Golang</a>
+      <span class="separator">•</span>
+    <a href="https://terrymight.github.io/categories/backend/">Backend</a></div>
+
+          
+        </div>
+      </header>
+
+      <div>
+        <figure>
+    <img src="https://terrymight.github.io/images/posts/how-to-build-a-basic-server-in-go.jpg"/> 
+</figure>
+
+<h2 id="introduction">Introduction</h2>
+<p>Am going to be showing you the go way of building a server.</p>
+<h2 id="requirement-and-assumed-knowledge">Requirement and assumed knowledge</h2>
+<ul>
+<li>
+<p>Programming experience.</p>
+</li>
+<li>
+<p>Some DOS command-line knowledge.</p>
+</li>
+<li>
+<p>How to install go on your machine (see the <a href="https://golang.org/doc/install">Installation Instructions</a>).</p>
+</li>
+<li>
+<p>Any code editor (for me I will be using <a href="https://code.visualstudio.com/">Visual Studio Code Editor</a> because of it simplicity and looks).</p>
+</li>
+<li>
+<p>if you just want to get along without having to install any of those you could use golang online compiler at <a href="https://play.golang.org/">https://play.golang.org/</a>.</p>
+</li>
+</ul>
+<h2 id="getting-started">Getting started</h2>
+<p>Make a new directory for this tutorial inside your GOPATH and cd to it:</p>
+<pre><code>$ mkdir simple-go-server
+$ cd simple-go-server
+</code></pre>
+<p>Create a file named main.go, open it in your favorite editor, and add the following lines:</p>
+<pre><code>package main
+func main() {
+
+}
+</code></pre>
+<p>We have just created a function <code>func main(){}</code> this is going to serve as the entry point in our just created server. Am going to add function, called <code>handler</code> this is going to handle our in coming request.</p>
+<figure>
+    <img src="https://terrymight.github.io/images/posts/how-to-create-a-simple-server.png"/> 
+</figure>
+
+<p>Next, the main function begins with a call to http.HandleFunc, which tells the http package to handle all requests to the web root (&quot;/&quot;) with handler.</p>
+<p>Now, add the following code to the body of our <code>main function</code> :</p>
+<pre><code>handler := http.HandlerFunc(handler)
+if err := http.ListenAndServe(&quot;:5000&quot;, handler); err != nil {
+    log.Fatalf(&quot;could not listen on port 5000 %v&quot;, err)
+}
+</code></pre>
+<p>So far all of our application code has been in one file, however, this isn&rsquo;t best practice for larger projects where you&rsquo;ll want to separate things into different files.</p>
+<figure>
+    <img src="https://terrymight.github.io/images/posts/go-simple-server-test-one.png"/> 
+</figure>
+
+<p><code>http.Handlerfunc</code> From the documentation, we see that type HandlerFunc has already implemented the ServeHTTP method. By type casting our PlayerServer function with it, we have now implemented the required Handler.</p>
+<p><code>http.ListenAndServe(&quot;:5000&quot;...)</code>  takes a port to listen on a Handler. If the port is already being listened to it will return an error so we are using an if statement to capture that scenario and log the problem to the user.</p>
+<p>An <code>http.ResponseWriter</code> value assembles the HTTP server&rsquo;s response; by writing to it, we send data to the HTTP client.</p>
+<p>An <code>http.Request</code> is a data structure that represents the client HTTP request. r.URL.Path is the path component of the request URL. The trailing [1:] means &ldquo;create a sub-slice of Path from the 1st character to the end.&rdquo; This drops the leading &ldquo;/&rdquo; from the path name.</p>
+<p>You can compile and run the program like this:</p>
+<pre><code>$ go run main.go
+</code></pre>
+<p>If you run this program and access the URL:</p>
+<p><code>http://localhost:5000/Jesus</code></p>
+<p>(If you&rsquo;re using Windows you must type <code>&quot;Jesus&quot; </code>without the &ldquo;<code>./&quot;</code> to run the program.)</p>
+
+      </div>
+     
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "tejirimayone" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Feel free to contact me at Terrymayone@gmail.com.</p>
+    
+     © 2020
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/">Github</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-145093571-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+  </body>
+
+</html>

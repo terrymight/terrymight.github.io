@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TejiriMayone</title>
@@ -6,10 +6,24 @@
     <description>Recent content on TejiriMayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Mar 2020 07:10:57 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 15:26:35 +0100</lastBuildDate>
     
 	<atom:link href="https://terrymight.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to create a simple Golang Server</title>
+      <link>https://terrymight.github.io/posts/how-to-basic-server-in-go/</link>
+      <pubDate>Thu, 22 Oct 2020 15:26:35 +0100</pubDate>
+      
+      <guid>https://terrymight.github.io/posts/how-to-basic-server-in-go/</guid>
+      <description>Introduction Am going to be showing you the go way of building a server.
+Requirement and assumed knowledge   Programming experience.
+  Some DOS command-line knowledge.
+  How to install go on your machine (see the Installation Instructions).
+  Any code editor (for me I will be using Visual Studio Code Editor because of it simplicity and looks).
+  if you just want to get along without having to install any of those you could use golang online compiler at https://play.</description>
+    </item>
     
     <item>
       <title>How to Format BsDatePicker to TimeDate in Angular 9</title>
@@ -20,7 +34,7 @@
       <description>Introduction In these tutorial I will discuss on how to add datepicker and convert to dateTime/any formart in our Angular Forms.
 Getting Started BsDatepicker is a package found in ngx-bootstrap which contains all core (and not only) Bootstrap components powered by Angular.
 Installation instructions Install ngx-bootstrap from npm:
-npm install ngx-bootstrap --sav Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</description>
+npm install ngx-bootstrap --sav Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</description>
     </item>
     
     <item>
@@ -40,7 +54,7 @@ Companies &amp;amp; Projects Using Git The list is long but am just going to pro
       
       <guid>https://terrymight.github.io/about/</guid>
       <description>Tejiri is the owner of Gilgal Global Technology Service. Fomerly with Softquest System a Software company in Abuja, Nig.
-Am a full stack with strong knowledge with Angular &amp;amp; Golang developer, I was use to developing in Laravel, PHP. I trans because I want to once and run anywhere mobile and desktop. I have an excellence knowledge with wordpress CMS. Beside all this I good know how on Digital marketing.</description>
+Am a full stack with strong knowledge with Angular &amp;amp; Golang developer, I was use to developing in Laravel, PHP. I trans because I want to once and run anywhere mobile and desktop. I have an excellence knowledge with wordpress CMS. Beside all this I good know how on Digital marketing. Currently providing this services to two companies.</description>
     </item>
     
     <item>
@@ -61,11 +75,12 @@ Am a full stack with strong knowledge with Angular &amp;amp; Golang developer, I
       <description>Features of this website includes the following:
  Unlimited pages Contact forms Responsive design for both mobile and desktop Unlimited @domain.com emails Google Analytics for real time monitoring Easy and maintainable back without and coding required  Azoproperty.com.ng -This is property listens site:
 goto site
-   An image of the homepage
-  
 Phermdorah.com.ng -Company profile and services site:
 goto site
-   An image of the homepage</description>
+299mold.com -Company profile and services site:
+goto site
+Ogamco.com -Company profile and services site:
+goto site</description>
     </item>
     
   </channel>

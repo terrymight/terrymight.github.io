@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>TypeScript on TejiriMayone</title>
@@ -20,7 +20,7 @@
       <description>Introduction In these tutorial I will discuss on how to add datepicker and convert to dateTime/any formart in our Angular Forms.
 Getting Started BsDatepicker is a package found in ngx-bootstrap which contains all core (and not only) Bootstrap components powered by Angular.
 Installation instructions Install ngx-bootstrap from npm:
-npm install ngx-bootstrap --sav Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</description>
+npm install ngx-bootstrap --sav Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</description>
     </item>
     
   </channel>

@@ -55,7 +55,7 @@ Companies &amp; Projects Using Git The list is long but am just going to provide
     <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
   <body class=" ">
@@ -124,23 +124,15 @@ Companies &amp; Projects Using Git The list is long but am just going to provide
       </header>
 
       <div>
-        
-
-<h2 id="how-to-upload-to-github-using-git-with-cmd-or-terminal">How to upload to github using git with cmd or terminal</h2>
-
+        <h2 id="how-to-upload-to-github-using-git-with-cmd-or-terminal">How to upload to github using git with cmd or terminal</h2>
 <figure>
     <img src="https://terrymight.github.io/images/posts/how-to-upload-files-to-git.jpeg"/> 
 </figure>
 
-
 <h3 id="what-is-git">What is git?</h3>
-
 <p>Git is the most used modern version control system in the world today. A large amount of software project use git Git for version control. Git can handle everything from small to very large projects with speed and efficiency.</p>
-
-<h3 id="companies-projects-using-git">Companies &amp; Projects Using Git</h3>
-
+<h3 id="companies--projects-using-git">Companies &amp; Projects Using Git</h3>
 <p>The list is long but am just going to provide a few common name we are all familiar with link to the project itself incase you are intrested in looking at the codebase.</p>
-
 <ul>
 <li><a href="https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git">Linux</a></li>
 <li><a href="https://android-review.googlesource.com/#/q/status:open,n,z">Android</a></li>
@@ -150,56 +142,44 @@ Companies &amp; Projects Using Git The list is long but am just going to provide
 <li><a href="https://github.com/twitter">Twitter</a></li>
 <li><a href="https://github.com/linkedin">Linkedin</a></li>
 </ul>
-
 <h3 id="what-is-distributed-version-control-system">What is distributed Version Control System?</h3>
-
 <p>Remote repository which is stored in a server and a local repository which is stored in the computer of each developer. This means that the code is not just stored in a central computer or server, but the copies of the code is present in all the developers’ computers. Git is a Distributed Version Control System since the code is present in every developer’s computer.</p>
-
-<h3 id="let-s-get-started-on-using-git-now">Let’s get started on using Git now</h3>
-
+<h3 id="lets-get-started-on-using-git-now">Let’s get started on using Git now</h3>
 <p><a href="https://git-scm.com/downloads">Here is a link for you to download git</a></p>
-
 <p>Congratulations if you have successfully installed it on you computer.</p>
-
 <p>Now we need to verify you&rsquo;ve correctly installed <code>git</code> on your computer. Open your cmd and type the code. <code>git --version</code></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git --version
-git version 2.20.1.windows.1</pre></div>
+<pre><code>git --version
+git version 2.20.1.windows.1
+</code></pre>
 <p>now your version could look a bit different from mine, in case your reading this post in the future.</p>
-
 <p>Go into your project folder and add a local Git repository to the project using the following commands:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">cd project-folder
-git init</pre></div>
+<pre><code>cd project-folder
+git init
+</code></pre>
 <h3 id="staging-and-committing-the-code">Staging and Committing the code</h3>
-
 <p>The staging area is there to keep track of all the files which are to be committed. Committing is the process in which the code is added to the local repository. Before committing the code, it has to be in the staging area.</p>
-
 <p>Any file which is not added to the staging area will not be committed. This gives the developer control over which files need to be committed.</p>
-
 <h3 id="staging">Staging</h3>
-
 <p>Use the following command for staging the file:</p>
-
 <p>Before staging your code if run this code:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git status </pre></div>
+<pre><code>git status 
+</code></pre>
 <p>this tell you all your code that has not been added to staging area yet. We are going to add them together in a moment. (Remember this is all run in your cmd or terminal)</p>
-
 <p>In case you want to add multiple files you can use:
 along with there exetentions e.g <code>index.html</code> or <code>style.css</code></p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git add file1 file2 </pre></div>
+<pre><code>git add file1 file2 
+</code></pre>
 <p>If you want to add all the files inside your project folder to the staging area, use the following command:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git add .</pre></div>
+<pre><code>git add .
+</code></pre>
 <h3 id="committing">Committing</h3>
-
 <p>Use the following command to commit the file:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git commit -m &#34;Initial Commit&#34;</pre></div>
+<pre><code>git commit -m &quot;Initial Commit&quot;
+</code></pre>
 <p><code>Initial Commit</code> is the commit message here. Enter a relevant commit message to indicate what code changes were done in that particular commit.</p>
-
 <h3 id="remote-git-repository">Remote Git Repository</h3>
-
 <p>Until now, we have been working only in the local repository. Each developer will work in their local repository but eventually, they will push the code into a remote repository. Once the code is in the remote repository, other developers can see and modify that code.</p>
-
-<p>Go to <a href="Go to https://github.com/">https://github.com/</a> create an account if you have not already done so. Then create a new Repository</p>
-
+<p>Go to [https://github.com/](Go to <a href="https://github.com/">https://github.com/</a>) create an account if you have not already done so. Then create a new Repository</p>
 <figure>
     <img src="https://terrymight.github.io/images/posts/github-repo.png"
          alt="an example of github repo, link at https://github.com/terrymight/exams"/> <figcaption>
@@ -207,29 +187,27 @@ along with there exetentions e.g <code>index.html</code> or <code>style.css</cod
         </figcaption>
 </figure>
 
-
 <p>The repository URL is the highlighted portion <code>https://github.com/terrymight/exams.git</code></p>
-
 <h3 id="how-to-point-your-local-repo-to-the-remote-repo">How to point your local repo to the remote repo?</h3>
-
 <p>In order to point your local repository to the remote repository, use the following command:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git remote add origin [repository url]</pre></div>
+<pre><code>git remote add origin [repository url]
+</code></pre>
 <p>To push all the code from the local repository into the remote repository, use the following command:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git push -u origin master</pre></div>
+<pre><code>git push -u origin master
+</code></pre>
 <p>This pushes the code from the master branch in the local repository to the master branch in the remote repository.</p>
-
 <h3 id="additional-commands">Additional Commands</h3>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Git Pull</pre></div>
+<pre><code>Git Pull
+</code></pre>
 <p>git pull is used to pull the latest changes from the remote repository into the local repository. The remote repository code is updated continuously by various developers, hence git pull is necessary:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git pull origin master</pre></div>
+<pre><code>git pull origin master
+</code></pre>
 <h3 id="git-clone">Git Clone</h3>
-
 <p>git clone is used to clone an existing remote repository into your computer. The command for this is:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">git clone [repository url]</pre></div>
+<pre><code>git clone [repository url]
+</code></pre>
 <h2 id="about-the-author">About the author</h2>
-
 <p>I love technology and follow the advancements in technology. I also like helping others with any knowledge I have in the technology space.</p>
-
 <p>Feel free to connect with me  on twitter <a href="https://twitter.com/bobjeorge4real">https://twitter.com/bobjeorge4real</a></p>
 
       </div>

@@ -53,7 +53,7 @@
     <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://terrymight.github.io/images/favicon-16x16.png" sizes="16x16">
 
-    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="generator" content="Hugo 0.74.3" />
   </head>
 
   <body class=" ">
@@ -126,73 +126,60 @@
       </header>
 
       <div>
-        
-
-<figure>
+        <figure>
     <img src="https://terrymight.github.io/images/posts/datepicker.png"/> 
 </figure>
 
-
 <h2 id="introduction">Introduction</h2>
-
 <p>In these tutorial I will discuss on how to add datepicker and convert to dateTime/any formart in our Angular Forms.</p>
-
 <h2 id="getting-started">Getting Started</h2>
-
 <p>BsDatepicker is a package found in ngx-bootstrap which contains all core (and not only) Bootstrap components powered by Angular.</p>
-
 <h2 id="installation-instructions">Installation instructions</h2>
-
 <p>Install ngx-bootstrap from npm:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">npm install ngx-bootstrap --sav</pre></div>
+<pre><code>npm install ngx-bootstrap --sav
+</code></pre>
 <p>Note: Here, don’t forget to import FormsModule in main module before start using the input elements.</p>
-
 <p>To add needed package to NgModule imports:</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">import { BrowserAnimationsModule } from &#39;@angular/platform-browser/animations&#39;;
-import { BsDatepickerModule } from &#39;ngx-bootstrap/datepicker&#39;;
+<pre><code>import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
 imports: [
     BrowserAnimationsModule,
     BsDatepickerModule.forRoot(),
     ...]
-})</pre></div>
+})
+</code></pre>
 <p>Note: If you installed ngx-bootstrap not via ng add command, you will need to perform a several actions</p>
-
 <p>Notable change is additional css for it &ldquo;/datepicker/bs-datepicker.css&rdquo;</p>
-
 <p>There are two ways of adding css:</p>
-
-<p>Load it from CDN.
-Add
-    <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap/datepicker/bs-datepicker.css"></p>
-
+<p>Load it from CDN. 
+Add 
+<!-- raw HTML omitted --></p>
 <p>to your index.html
 Load it from <code>angular.json</code> file by adding it to style array, just as shown in the image</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">node_modules/ngx-bootstrap/datepicker/bs-datepicker.css</pre></div>
+<pre><code>node_modules/ngx-bootstrap/datepicker/bs-datepicker.css
+</code></pre>
 <figure>
     <img src="https://terrymight.github.io/images/posts/bsdatepicker.png"/> 
 </figure>
 
-
 <p>Next, let’s see how the datepicker can be called in the HTML template. Then go ahead and add <code>bsDatepicker</code> to your template input element</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;div class=&#34;row&#34;&gt;
-&lt;div class=&#34;col-xs-12 col-12 col-md-4 form-group&#34;&gt;
-    &lt;input type=&#34;text&#34;
-        placeholder=&#34;Datepicker&#34;
-        class=&#34;form-control&#34;
+<pre><code>&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col-xs-12 col-12 col-md-4 form-group&quot;&gt;
+    &lt;input type=&quot;text&quot;
+        placeholder=&quot;Datepicker&quot;
+        class=&quot;form-control&quot;
         bsDatepicker&gt;
 &lt;/div&gt;
-&lt;/div&gt;</pre></div>
+&lt;/div&gt;
+</code></pre>
 <p>if everything is correct you should see the datepicker once you click in the input box.</p>
-
-<p>I wont go deep on how to format the BsDatepicker such as to change theme and disable some defaults settings like week, months and so on.  For information on how to do that follow this link
-Go to <a href="Go to https://valor-software.com/ngx-bootstrap/#/datepicker#inline-datepicker">https://valor-software.com/ngx-bootstrap/#/datepicker#inline-datepicker</a></p>
-
+<p>I wont go deep on how to format the BsDatepicker such as to change theme and disable some defaults settings like week, months and so on.  For information on how to do that follow this link 
+Go to [https://valor-software.com/ngx-bootstrap/#/datepicker#inline-datepicker](Go to <a href="https://valor-software.com/ngx-bootstrap/#/datepicker#inline-datepicker">https://valor-software.com/ngx-bootstrap/#/datepicker#inline-datepicker</a>)</p>
 <h2 id="formating-to-datetime">Formating to DateTime</h2>
-
 <p>To be able to format date to a format that can be sent to the endpoint we are going to deconstruct the value received from the form, so we can get the various date field needed in your conponents.ts</p>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4">OnSubmit(form: FormGroup){
+<pre><code>OnSubmit(form: FormGroup){
         const {value, valid} = form
         if(valid){   
             var date = value.date_of_earning
@@ -203,10 +190,11 @@ Go to <a href="Go to https://valor-software.com/ngx-bootstrap/#/datepicker#inlin
             var minutes = date.getMinutes()
             var seconds = date.getSeconds()
             // we are setting the new value for the date form constrol
-            value[&#34;dateTime&#34;] = year+&#34;-&#34;+month+&#34;-&#34;+day +&#34; &#34; + hours+&#34;:&#34;+minutes+&#34;:&#34;+seconds
+            value[&quot;dateTime&quot;] = year+&quot;-&quot;+month+&quot;-&quot;+day +&quot; &quot; + hours+&quot;:&quot;+minutes+&quot;:&quot;+seconds
             console.log(value)
         }
-    }</pre></div>
+    }
+</code></pre>
 <p>I hope, you loved this article and it’s been helpful to you. Don’t forget to share!</p>
 
       </div>
