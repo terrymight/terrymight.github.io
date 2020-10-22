@@ -13,10 +13,10 @@
     
     <item>
       <title>How to create a simple Golang Server</title>
-      <link>https://terrymight.github.io/posts/how-to-build-golang-basic-server-in-go/</link>
+      <link>https://terrymight.github.io/posts/how-to-build-basic-server-in-go/</link>
       <pubDate>Thu, 22 Oct 2020 15:26:35 +0100</pubDate>
       
-      <guid>https://terrymight.github.io/posts/how-to-build-golang-basic-server-in-go/</guid>
+      <guid>https://terrymight.github.io/posts/how-to-build-basic-server-in-go/</guid>
       <description>Introduction Am going to be showing you the go way of building a server.
 Requirement and assumed knowledge   Programming experience.
   Some DOS command-line knowledge.
