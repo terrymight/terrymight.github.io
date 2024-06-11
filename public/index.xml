@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HOME on Edna West</title>
+    <link>https://example.com/</link>
+    <description>Recent content in HOME on Edna West</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Edna West</copyright>
+    <lastBuildDate>Fri, 03 May 2019 09:37:55 +0200</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting started</title>
+      <link>https://example.com/post/getting-started/</link>
+      <pubDate>Fri, 03 May 2019 09:37:55 +0200</pubDate>
+      
+      <guid>https://example.com/post/getting-started/</guid>
+      <description>&lt;p&gt;Here are some details to help you getting started with this theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Portfolio Definition</title>
+      <link>https://example.com/post/portfolio-definition/</link>
+      <pubDate>Thu, 02 May 2019 19:49:05 +0200</pubDate>
+      
+      <guid>https://example.com/post/portfolio-definition/</guid>
+      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;
+&lt;figure&gt;&lt;img src=&#34;https://example.com/post/images/portfolio-example.png&#34;
+         alt=&#34;Example of Portfolio page&#34;/&gt;&lt;figcaption&gt;
+            &lt;p&gt;Example of Portfolio page&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sample project</title>
+      <link>https://example.com/portfolio/sample-project/</link>
+      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      
+      <guid>https://example.com/portfolio/sample-project/</guid>
+      <description>This would be a description of your sample project. You can add any content you&amp;rsquo;d like.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+    </item>
+    
+    <item>
+      <title>Archetypes management</title>
+      <link>https://example.com/post/archetypes/</link>
+      <pubDate>Thu, 02 May 2019 19:25:30 +0200</pubDate>
+      
+      <guid>https://example.com/post/archetypes/</guid>
+      <description>&lt;p&gt;The archetypes are defined in the &lt;code&gt;archetypes&lt;/code&gt; folder, for both post and portfolio.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://example.com/post/shortcodes/</link>
+      <pubDate>Mon, 29 Apr 2019 16:18:12 +0100</pubDate>
+      
+      <guid>https://example.com/post/shortcodes/</guid>
+      <description>&lt;p&gt;Introduction of the shortcodes defined in the personal-web theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Config File</title>
+      <link>https://example.com/post/config-file/</link>
+      <pubDate>Sat, 20 Apr 2019 16:18:12 +0100</pubDate>
+      
+      <guid>https://example.com/post/config-file/</guid>
+      <description>&lt;p&gt;Here is the basic config file used for personal-web.&lt;/p&gt;
+&lt;p&gt;You can use it as a base for your website.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Pages</title>
+      <link>https://example.com/post/pages/</link>
+      <pubDate>Sat, 20 Apr 2019 16:18:12 +0100</pubDate>
+      
+      <guid>https://example.com/post/pages/</guid>
+      <description>&lt;p&gt;Variables you can use in pages&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Open Graph image</title>
+      <link>https://example.com/post/define-specific-og-image/</link>
+      <pubDate>Sat, 20 Apr 2019 11:14:59 +0200</pubDate>
+      
+      <guid>https://example.com/post/define-specific-og-image/</guid>
+      <description>Within any page, you can add in the FrontMatter a images array that will be used to define a specific Open Graph image.
+For example, see content/_index.md page:
+images: [&amp;#34;/images/sample.jpg&amp;#34;] </description>
+    </item>
+    
+  </channel>
+</rss>
