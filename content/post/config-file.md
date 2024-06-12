@@ -12,11 +12,11 @@ You can use it as a base for your website.
 <!--more-->
 
 ```TOML
-baseURL = "https://example.com/"
+baseURL = "https://tejirimayone.com.ng/"
 languageCode = "en-us"
-title = "Edna West"
+title = "Tejiri Mayone"
 theme = "personal-web"
-copyright="© Edna West"
+copyright="© Tejiri Mayone"
 googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
@@ -24,7 +24,7 @@ pygmentsUseClasses=true
 pygmentsCodeFences=true
 
 [params.intro]
-  main = "Hi, I'm Edna :wave:"
+  main = "Hi, I'm Tejiri :Mayone:"
   sub = "I'm a Web Developer and Entrepreneur"
 
 [params.main]
@@ -62,20 +62,14 @@ pygmentsCodeFences=true
   customCSS = ""
 
 [params.social]
-  github = "https://github.com/"
-  twitter = "https://twitter.com/"
-  linkedin = "https://www.linkedin.com/in/"
-  medium = "https://medium.com/"
-  codepen = "https://codepen.io/"
-  facebook = "https://www.facebook.com/"
-  youtube = "https://www.youtube.com/"
-  instagram = "https://www.instagram.com/"
-  gitlab = "https://gitlab.com/"
-  keybase = "https://keybase.io/"
+  github = "https://github.com/terrymight"
+  twitter = "https://x.com/bobjeorge4real"
+  linkedin = "https://www.linkedin.com/in/tejiri-mayone-2090a266/"
+  youtube = "https://www.youtube.com/@tdevclass"
 
 [params.contact]
-  email = ""
-  text= ""
+  email = "hello@tejirimayone.com.ng"
+  text= "hello@tejirimayone.com.ng"
 
 
 [menu]
@@ -129,7 +123,8 @@ The sidebar header is defined within the `params.intro` section. The `main` bein
   sub = "I'm a Web Developer and Entrepreneur"
 ```
 
-You can also customize the params with the  `params.sidebar` parameters. The `config.toml` file contains the default values as examples.
+You can also customize the params with the `params.sidebar` parameters. The `config.toml` file contains the default values as examples.
+
 ```TOML
 [params.sidebar]
   backgroundImage = ''
@@ -140,7 +135,7 @@ You can also customize the params with the  `params.sidebar` parameters. The `co
 ## 404
 
 The 404 page is defined within the `params.notFound` section.
-The `gopher`, `h1` and `p` params define the image and texts displayed on the page. 
+The `gopher`, `h1` and `p` params define the image and texts displayed on the page.
 
 In the `[params]` section, the `mainSections` params possible values are 'portfolio' or 'post': it defines the section highlighted on the page.
 
@@ -167,6 +162,7 @@ You can also define how the post and portfolio sections will be named on the 404
 ## Customization
 
 You can define a custom CSS file in the `customCSS` param and a favicon.
+
 ```TOML
 [params.assets]
   favicon = ""
@@ -175,7 +171,7 @@ You can define a custom CSS file in the `customCSS` param and a favicon.
 
 ## Social
 
-You can define your social media usernames in the `params.social` and the `params.contact` paramaters. 
+You can define your social media usernames in the `params.social` and the `params.contact` paramaters.
 
 In this last section, the email expects your email address and the text is what will be displayed on the sidebar, right below the last item of the menu. If blank, nothing is displayed.
 
@@ -198,6 +194,7 @@ In this last section, the email expects your email address and the text is what 
 ```
 
 ## Latest Publication
+
 You can define the name of the latest publication header on the home page with the param `latestPublishHeader`.
 
 ```TOML

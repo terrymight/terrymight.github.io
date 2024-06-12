@@ -1,8 +1,8 @@
-baseURL = "https://example.com/"
+baseURL = "https://tejirimayone.com.ng/"
 languageCode = "en-us"
-title = "Edna West"
+title = "Tejiri Mayone"
 theme = "personal-web"
-copyright="© Edna West"
+copyright="© Tejiri Mayone"
 googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
@@ -10,7 +10,7 @@ pygmentsUseClasses=true
 pygmentsCodeFences=true
 
 [params.intro]
-  main = "Hi, I'm Edna :wave:"
+  main = "Hi, I'm Tejiri :wave:"
   sub = "I'm a Web Developer and Entrepreneur"
 
 [params.main]
@@ -49,19 +49,13 @@ pygmentsCodeFences=true
   customCSS = ""
 
 [params.social]
-  github = "https://github.com/"
-  twitter = "https://twitter.com/"
-  linkedin = "https://www.linkedin.com/in/"
-  medium = "https://medium.com/"
-  codepen = "https://codepen.io/"
-  facebook = "https://www.facebook.com/"
-  youtube = "https://www.youtube.com/"
-  instagram = "https://www.instagram.com/"
-  gitlab = "https://gitlab.com/"
-  keybase = "https://keybase.io/"
+  github = "https://github.com/terrymight"
+  twitter = "https://x.com/bobjeorge4real"
+  linkedin = "https://www.linkedin.com/in/tejiri-mayone-2090a266/"
+  youtube = "https://www.youtube.com/@tdevclass"
 
 [params.contact]
-  email = ""
+  email = "hello@tejirimayone.com.ng"
   text= "" # text of the contact link in the sidebar. If email params.contact.email is defined
 
 
