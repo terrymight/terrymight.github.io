@@ -6,8 +6,8 @@ images: ["/images/sample.jpg"]
 
 Hey,
 
-I'm Edna West, a Web Developer and Entrepreneur.
+I'm Tejiri Mayone, a Web Developer and Entrepreneur.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus error cumque quisquam necessitatibus libero dolore porro, quo at molestiae modi voluptatibus iusto alias corporis. Accusamus, debitis, atque. Maiores, distinctio, neque.
+Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications.
 
 [Get to know me better](/about "Get to know me better")
