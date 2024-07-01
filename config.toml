@@ -1,4 +1,5 @@
-baseURL = "https://terrymight-github-io.pages.dev/"
+baseURL = "https://tejirimayone.com.ng/"
+canonifyURLs = true
 languageCode = "en-us"
 title = "Tejiri Mayone"
 theme = "personal-web"
