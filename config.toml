@@ -3,7 +3,7 @@ canonifyURLs = true
 languageCode = "en-us"
 title = "Tejiri Mayone"
 theme = "personal-web"
-copyright="© Tejiri Mayone 2024"
+copyright="© copyright 2024"
 googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
@@ -26,7 +26,7 @@ pygmentsCodeFences=true
 
 [params]
   breadcrumb = true
-  accentColor = "#E8AB0E"
+  accentColor = "#112F41"
   mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
   rendererSafe = false # set to true if wish to remove the unsafe renderer setting below (recommended). Titles will not be run through markdownify
 
@@ -42,7 +42,7 @@ pygmentsCodeFences=true
   portfolio = "project"
 
 [params.sidebar]
-  backgroundImage = '/images/tejiri_bg.jpeg' # header background image - default "/images/default_sidebar.jpg" - Photo by Tim Marshall on Unsplash
+  backgroundImage = '/images/tejiri_bg.jpeg' # header background image - default "/images/default_sidebar.jpg" - Photo by Mrs Favour Chidi
   gradientOverlay = 'rgba(0,0,14,0.4),rgba(0,0,0,0.4)' # default: rgba(0,0,0,0.4),rgba(0,0,0,0.4)
   logo = "/images/profile_img.jpeg" # - default "/images/edna-west.jpg"
 [params.assets]

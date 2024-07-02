@@ -2,12 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://tejirimayone.com.ng/post/getting-started/</loc>
-    <lastmod>2019-05-03T09:37:55+02:00</lastmod>
+    <loc>https://tejirimayone.com.ng/designs/css/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/designs/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/techs/elementor/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://tejirimayone.com.ng/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/designs/html/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/techs/javascript/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/portfolio/lisdel/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/techs/php/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/portfolio/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/techs/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/techs/wordpress/</loc>
+    <lastmod>2024-07-02T10:35:11+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/post/getting-started/</loc>
     <lastmod>2019-05-03T09:37:55+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -19,41 +69,6 @@
   </url><url>
     <loc>https://tejirimayone.com.ng/post/portfolio-definition/</loc>
     <lastmod>2019-05-02T19:49:05+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/techs/d3/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/designs/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/techs/javascript/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/designs/photoshop/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/portfolio/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/portfolio/sample-project/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/techs/</loc>
-    <lastmod>2019-05-02T19:47:09+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

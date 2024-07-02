@@ -6,23 +6,41 @@
     <description>Recent content in Techs on Tejiri Mayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Tejiri Mayone 2024</copyright>
-    <lastBuildDate>Thu, 02 May 2019 19:47:09 +0200</lastBuildDate><atom:link href="https://tejirimayone.com.ng/techs/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© copyright 2024</copyright>
+    <lastBuildDate>Tue, 02 Jul 2024 10:35:11 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/techs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>D3</title>
-      <link>https://tejirimayone.com.ng/techs/d3/</link>
-      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      <title>Elementor</title>
+      <link>https://tejirimayone.com.ng/techs/elementor/</link>
+      <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
       
-      <guid>https://tejirimayone.com.ng/techs/d3/</guid>
+      <guid>https://tejirimayone.com.ng/techs/elementor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
       <link>https://tejirimayone.com.ng/techs/javascript/</link>
-      <pubDate>Thu, 02 May 2019 19:47:09 +0200</pubDate>
+      <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
       
       <guid>https://tejirimayone.com.ng/techs/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PHP</title>
+      <link>https://tejirimayone.com.ng/techs/php/</link>
+      <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/techs/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://tejirimayone.com.ng/techs/wordpress/</link>
+      <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/techs/wordpress/</guid>
       <description></description>
     </item>
     
