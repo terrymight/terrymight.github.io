@@ -7,7 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
-    <lastBuildDate>Tue, 02 Jul 2024 10:35:11 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/techs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/techs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PHP</title>
+      <link>https://tejirimayone.com.ng/techs/php/</link>
+      <pubDate>Tue, 02 Jul 2024 15:28:41 +0100</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/techs/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://tejirimayone.com.ng/techs/wordpress/</link>
+      <pubDate>Tue, 02 Jul 2024 15:28:41 +0100</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/techs/wordpress/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Elementor</title>
       <link>https://tejirimayone.com.ng/techs/elementor/</link>
@@ -27,20 +45,11 @@
     </item>
     
     <item>
-      <title>PHP</title>
-      <link>https://tejirimayone.com.ng/techs/php/</link>
-      <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
+      <title>SEO</title>
+      <link>https://tejirimayone.com.ng/techs/seo/</link>
+      <pubDate>Thu, 30 Mar 2023 16:52:42 +0100</pubDate>
       
-      <guid>https://tejirimayone.com.ng/techs/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Wordpress</title>
-      <link>https://tejirimayone.com.ng/techs/wordpress/</link>
-      <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/techs/wordpress/</guid>
+      <guid>https://tejirimayone.com.ng/techs/seo/</guid>
       <description></description>
     </item>
     

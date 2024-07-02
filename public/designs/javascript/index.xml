@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PHP on Tejiri Mayone</title>
-    <link>https://tejirimayone.com.ng/techs/php/</link>
-    <description>Recent content in PHP on Tejiri Mayone</description>
+    <title>Javascript on Tejiri Mayone</title>
+    <link>https://tejirimayone.com.ng/designs/javascript/</link>
+    <description>Recent content in Javascript on Tejiri Mayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
-    <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/techs/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/designs/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Samish Real Estate :Wordpress</title>
       <link>https://tejirimayone.com.ng/portfolio/samish/</link>

@@ -1,11 +1,11 @@
 ---
-title: Legislative Initiative For Sustainable Development :LISDEL
-description: Highly sec
+title: Legislative Initiative For Sustainable Development :Wordpress
+description: Wordpress Corporate Company Website
 date: "2024-07-02T10:35:11+01:00"
 jobDate: 2018-09-17
 work: [design, architecture, development, deployment]
 techs: [javascript, PHP, Wordpress, Elementor]
-designs: [HTML, CSS]
+designs: [HTML, CSS, Javascript]
 thumbnail: lisdel/LISDEL-Home.png
 projectUrl: https://lisdel.org/
 testimonial:

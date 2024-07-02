@@ -41,6 +41,16 @@
     </item>
     
     <item>
+      <title>Manage Your Menu</title>
+      <link>https://tejirimayone.com.ng/post/manage-your-menu/</link>
+      <pubDate>Thu, 02 May 2019 19:06:29 +0200</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/post/manage-your-menu/</guid>
+      <description>&lt;p&gt;Menu in the sidebar can be defined within the &lt;code&gt;config.toml&lt;/code&gt; or directly in the files.
+I prefer the config file approach, as this menu is pretty simple.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Shortcodes</title>
       <link>https://tejirimayone.com.ng/post/shortcodes/</link>
       <pubDate>Mon, 29 Apr 2019 16:18:12 +0100</pubDate>
