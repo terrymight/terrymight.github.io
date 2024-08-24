@@ -4,7 +4,8 @@
 <meta name='theme-color' content='{{- .Site.Params.accentColor | default "black" -}}' />
 <meta name="keywords" content='{{ .Site.Params.keywords }}' />
 <meta name="author" content='{{ .Site.Params.author }}' />
-
+<meta name="robots" content="{{ .Site.Params.index }}" />
+<meta name="generator" content="{{ .Site.Params.generator }}" />
 
 <meta property="og:url" content='{{ .Site.Params.url }}' />
 <meta property="og:site_name" content='{{ .Site.Params.url }}' />
@@ -12,9 +13,10 @@
 <meta property="og:description" content='{{ .Site.Params.description }}' />
 <meta property="og:url" content='{{ .Site.Params.url }}' />
 <meta name="og:keywords" content='{{ .Site.Params.keywords }}' />
+<meta name="og:type" content='{{ .Site.Params.type }}' />
 
 <meta itemprop="description" content='{{ .Site.Params.description }}' />
-
+<meta itemprop="name" content="{{ .Site.Params.home }}">
 
 {{ if .Site.Params.assets.favicon }}
 <link rel="shortcut icon" href="{{ .Site.Params.assets.favicon }}" type="image/x-icon" />

@@ -34,6 +34,10 @@ pygmentsCodeFences=true
   keywords = "laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja"
   author = "Tejiri Mayone"
   image = "https://tejirimayone.com.ng/images/sample.jpg"
+  index = "index follow"
+  home = "Home"
+  type = "website"
+  generator = "Hugo 0.110.0"
 
 [params.notFound]
   gopher = "/images/gopher.png" # checkout https://gopherize.me/
