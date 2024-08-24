@@ -4,16 +4,16 @@
 <meta name='theme-color' content='{{- .Site.Params.accentColor | default "black" -}}' />
 
 
-<meta property="og:description" content='{{ .Params.description }}' />
+<meta property="og:description" content='{{ .Site.Params.description }}' />
 
-<meta property="og:url" content='{{ .Params.url }}' />
+<meta property="og:url" content='{{ .Site.Params.url }}' />
 
-<meta name="keywords" content='{{ .Params.keywords }}' />
-<meta name="author" content='{{ .Params.author }}' />
+<meta name="keywords" content='{{ .Site.Params.keywords }}' />
+<meta name="author" content='{{ .Site.Params.author }}' />
 
-<meta name="og:keywords" content='{{ .Params.keywords }}' />
-<meta property="og:url" content='{{ .Params.url }}' />
-<meta property="og:site_name" content='{{.Params.url }}' />
+<meta name="og:keywords" content='{{ .Site.Params.keywords }}' />
+<meta property="og:url" content='{{ .Site.Params.url }}' />
+<meta property="og:site_name" content='{{ .Site.Params.url }}' />
 
 
 {{ if .Site.Params.assets.favicon }}
