@@ -33,6 +33,7 @@ pygmentsCodeFences=true
   url = "https://tejirimayone.com.ng/"
   keywords = "laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja"
   author = "Tejiri Mayone"
+  image = "https://tejirimayone.com.ng/images/sample.jpg"
 
 [params.notFound]
   gopher = "/images/gopher.png" # checkout https://gopherize.me/
