@@ -2,17 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tejirimayone.com.ng/</loc>
+    <lastmod>2024-12-17T16:21:54+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/post/how_to_host_free_wordpress_for_free/</loc>
+    <lastmod>2024-12-17T16:21:54+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://tejirimayone.com.ng/post/</loc>
+    <lastmod>2024-12-17T16:21:54+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://tejirimayone.com.ng/designs/css/</loc>
     <lastmod>2024-07-02T15:28:41+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://tejirimayone.com.ng/designs/</loc>
-    <lastmod>2024-07-02T15:28:41+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/</loc>
     <lastmod>2024-07-02T15:28:41+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -67,6 +77,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/</loc>
+    <lastmod>2024-04-16T10:33:46+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://tejirimayone.com.ng/techs/seo/</loc>
     <lastmod>2023-03-30T16:52:42+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -77,48 +92,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://tejirimayone.com.ng/post/getting-started/</loc>
-    <lastmod>2019-05-03T09:37:55+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/</loc>
-    <lastmod>2019-05-03T09:37:55+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/portfolio-definition/</loc>
-    <lastmod>2019-05-02T19:49:05+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/archetypes/</loc>
-    <lastmod>2019-05-02T19:25:30+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/manage-your-menu/</loc>
-    <lastmod>2019-05-02T19:06:29+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/shortcodes/</loc>
-    <lastmod>2019-04-29T16:18:12+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/config-file/</loc>
-    <lastmod>2019-04-20T16:18:12+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/pages/</loc>
-    <lastmod>2019-04-20T16:18:12+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://tejirimayone.com.ng/post/define-specific-og-image/</loc>
-    <lastmod>2019-04-20T11:14:59+02:00</lastmod>
+    <loc>https://tejirimayone.com.ng/post/how_to_create_a_simple_floating_menu_with_html_and_css/</loc>
+    <lastmod>2023-03-01T09:50:46+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>

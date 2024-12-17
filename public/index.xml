@@ -7,7 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
-    <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 17 Dec 2024 16:21:54 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Build a WordPress Website and Host It for Free</title>
+      <link>https://tejirimayone.com.ng/post/how_to_host_free_wordpress_for_free/</link>
+      <pubDate>Tue, 17 Dec 2024 16:21:54 +0100</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/post/how_to_host_free_wordpress_for_free/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/how_to_host_free_wordpress_for_free.jpeg&#34;
+         alt=&#34;Javascript Reducer&#34;/&gt;&lt;figcaption&gt;
+            &lt;p&gt;Javascript Reducer&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
     <item>
       <title>Samish Real Estate :Wordpress</title>
       <link>https://tejirimayone.com.ng/portfolio/samish/</link>
@@ -30,6 +43,19 @@ Sliders: Dynamic sliders are integrated on the homepage and key landing pages, o
     </item>
     
     <item>
+      <title>The power of the Javascript reduce() function.</title>
+      <link>https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/</link>
+      <pubDate>Tue, 16 Apr 2024 10:33:46 +0200</pubDate>
+      
+      <guid>https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/javascript_reduce.png&#34;
+         alt=&#34;Javascript Reducer&#34;/&gt;&lt;figcaption&gt;
+            &lt;p&gt;Javascript Reducer&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;</description>
+    </item>
+    
+    <item>
       <title>Sterock Engineering Limited :Wordpress</title>
       <link>https://tejirimayone.com.ng/portfolio/sterockengineeringlimited/</link>
       <pubDate>Thu, 30 Mar 2023 16:52:42 +0100</pubDate>
@@ -40,84 +66,16 @@ Key Features SSL Certificate To ensure the security and privacy of user data, I 
     </item>
     
     <item>
-      <title>Getting started</title>
-      <link>https://tejirimayone.com.ng/post/getting-started/</link>
-      <pubDate>Fri, 03 May 2019 09:37:55 +0200</pubDate>
+      <title>How to create a simple floating menu with HTML and CSS</title>
+      <link>https://tejirimayone.com.ng/post/how_to_create_a_simple_floating_menu_with_html_and_css/</link>
+      <pubDate>Wed, 01 Mar 2023 09:50:46 +0200</pubDate>
       
-      <guid>https://tejirimayone.com.ng/post/getting-started/</guid>
-      <description>&lt;p&gt;Here are some details to help you getting started with this theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Portfolio Definition</title>
-      <link>https://tejirimayone.com.ng/post/portfolio-definition/</link>
-      <pubDate>Thu, 02 May 2019 19:49:05 +0200</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/portfolio-definition/</guid>
-      <description>&lt;p&gt;Here are some details about the portfolio settings.&lt;/p&gt;
-&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/portfolio-example.png&#34;
-         alt=&#34;Example of Portfolio page&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;Example of Portfolio page&lt;/p&gt;
+      <guid>https://tejirimayone.com.ng/post/how_to_create_a_simple_floating_menu_with_html_and_css/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/how_to_create_a_simple_floating_menu_with_html_and_css.jpeg&#34;
+         alt=&#34;floating menu with HTML and CSS&#34;/&gt;&lt;figcaption&gt;
+            &lt;p&gt;floating menu with HTML and CSS&lt;/p&gt;
         &lt;/figcaption&gt;
 &lt;/figure&gt;</description>
-    </item>
-    
-    <item>
-      <title>Archetypes management</title>
-      <link>https://tejirimayone.com.ng/post/archetypes/</link>
-      <pubDate>Thu, 02 May 2019 19:25:30 +0200</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/archetypes/</guid>
-      <description>&lt;p&gt;The archetypes are defined in the &lt;code&gt;archetypes&lt;/code&gt; folder, for both post and portfolio.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Manage Your Menu</title>
-      <link>https://tejirimayone.com.ng/post/manage-your-menu/</link>
-      <pubDate>Thu, 02 May 2019 19:06:29 +0200</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/manage-your-menu/</guid>
-      <description>&lt;p&gt;Menu in the sidebar can be defined within the &lt;code&gt;config.toml&lt;/code&gt; or directly in the files.
-I prefer the config file approach, as this menu is pretty simple.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>https://tejirimayone.com.ng/post/shortcodes/</link>
-      <pubDate>Mon, 29 Apr 2019 16:18:12 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/shortcodes/</guid>
-      <description>&lt;p&gt;Introduction of the shortcodes defined in the personal-web theme.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Config File</title>
-      <link>https://tejirimayone.com.ng/post/config-file/</link>
-      <pubDate>Sat, 20 Apr 2019 16:18:12 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/config-file/</guid>
-      <description>&lt;p&gt;Here is the basic config file used for personal-web.&lt;/p&gt;
-&lt;p&gt;You can use it as a base for your website.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Pages</title>
-      <link>https://tejirimayone.com.ng/post/pages/</link>
-      <pubDate>Sat, 20 Apr 2019 16:18:12 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/pages/</guid>
-      <description>&lt;p&gt;Variables you can use in pages&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Open Graph image</title>
-      <link>https://tejirimayone.com.ng/post/define-specific-og-image/</link>
-      <pubDate>Sat, 20 Apr 2019 11:14:59 +0200</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/define-specific-og-image/</guid>
-      <description>Within any page, you can add in the FrontMatter a images array that will be used to define a specific Open Graph image.
-For example, see content/_index.md page:
-images: [&amp;#34;/images/sample.jpg&amp;#34;] </description>
     </item>
     
   </channel>

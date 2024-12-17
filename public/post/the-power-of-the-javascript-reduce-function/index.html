@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'><head>
-  <title>javascript - Tejiri Mayone</title>
-  <link rel='canonical' href='https://tejirimayone.com.ng/techs/javascript/' />
+  <title>The power of the Javascript reduce() function. - Tejiri Mayone</title>
+  <link rel='canonical' href='https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/' />
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1' />
-<meta name='description' content='' />
+<meta name='description' content='The power of the Javascript reduce() function.' />
 <meta name='theme-color' content='#112F41' />
 <meta name="keywords" content='laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja' />
 <meta name="author" content='Tejiri Mayone' />
@@ -34,13 +34,18 @@
 <link rel="stylesheet" href="https://tejirimayone.com.ng/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
 <link rel="stylesheet" href="https://tejirimayone.com.ng/syntax.min.css" integrity="" media="screen">
 
-  <meta property="og:title" content="javascript" />
-<meta property="og:description" content="Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://tejirimayone.com.ng/techs/javascript/" />
+  <meta property="og:title" content="The power of the Javascript reduce() function." />
+<meta property="og:description" content="The power of the Javascript reduce() function." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-04-16T10:33:46+02:00" />
+<meta property="article:modified_time" content="2024-04-16T10:33:46+02:00" />
 
-  <meta itemprop="name" content="javascript">
-<meta itemprop="description" content="Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications.">
+  <meta itemprop="name" content="The power of the Javascript reduce() function.">
+<meta itemprop="description" content="The power of the Javascript reduce() function."><meta itemprop="datePublished" content="2024-04-16T10:33:46+02:00" />
+<meta itemprop="dateModified" content="2024-04-16T10:33:46+02:00" />
+<meta itemprop="wordCount" content="409">
+<meta itemprop="keywords" content="JAVASCRIPT," />
 </head>
 <body>
 
@@ -253,38 +258,119 @@
 
 
 <span >
-  <a href="https://tejirimayone.com.ng/techs/">Techs</a>
+  <a href="https://tejirimayone.com.ng/post/">My Blog</a>
    / 
 </span>
 
 
 <span  class="active">
-  <a href="https://tejirimayone.com.ng/techs/javascript/">javascript</a>
+  <a href="https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/">The power of the Javascript reduce() function.</a>
   
 </span>
 
 </div>
 
     
-    <main id="content" class="techs">
+    <main id="content" class="post">
 
-<h2>Javascript</h2>
-
-    <div class="portfolio-list">
-  <a href="https://tejirimayone.com.ng/portfolio/lisdel/">
-    <div class="portfolio-container">
-      <img title="Legislative Initiative For Sustainable Development :Wordpress" alt="Legislative Initiative For Sustainable Development :Wordpress" src="https://tejirimayone.com.ng/portfolio/lisdel/LISDEL-Home.png" />
-      <div class="img-overlay">
-      </div>
-      <div class="portfolio-details">
-        <h2><span>Legislative Initiative For Sustainable Development :Wordpress</span></h2>
-        <p class="small">design, architecture, development, deployment</p>
-        <p class="small">2018-09-17</p>
-      </div>
-    </div>
-  </a>
+<h1>The power of the Javascript reduce() function.</h1>
+<div class="reading-time">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M57.5 11C29.05 11 6 34.05 6 62.5S29.05 114 57.5 114 109 90.95 109 62.5 85.95 11 57.5 11zm0 93.032c-22.947 0-41.532-18.585-41.532-41.532 0-22.947 18.585-41.532 41.532-41.532 22.947 0 41.532 18.585 41.532 41.532 0 22.947-18.585 41.532-41.532 41.532zm12.833-21.68L52.703 69.54a2.508 2.508 0 0 1-1.018-2.015V33.427a2.5 2.5 0 0 1 2.492-2.492h6.646a2.5 2.5 0 0 1 2.492 2.492v29.426l13.871 10.092c1.122.81 1.35 2.368.54 3.49l-3.904 5.377a2.51 2.51 0 0 1-3.489.54z"/>
+  
+  </svg>
 </div>
 
+  <span>2 minutes</span>
+</div>
+
+<div class="published-date">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M77.577 51.23a1.807 1.807 0 0 0-2.2.342l-27.562 27.79a1.807 1.807 0 0 1-2.2.342l-14.008-9.702a1.807 1.807 0 0 0-2.2.342l-1.952 1.968c-.287.22-.456.568-.455.936.001.37.172.716.46.934L45.637 86.77a1.807 1.807 0 0 0 2.2-.342l31.709-31.97c.287-.22.456-.567.455-.936a1.175 1.175 0 0 0-.46-.933l-1.963-1.36z"/><path d="M97.304 20H80.512c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.347.023-.685.04-1.026H34.579c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.22.019-.434.025-.652a9.788 9.788 0 0 0-5.697 4.471 9.683 9.683 0 0 0-2.65 4.764L1.158 92.871c-.965 4.689 2.6 8.503 7.948 8.503h6.334v2.673c-.077 5.41 4.263 9.861 9.705 9.953h72.16c5.438-.095 9.774-4.546 9.694-9.953V29.953c.08-5.407-4.256-9.858-9.695-9.953zM10.078 96.653c-2.378 0-3.964-1.697-3.535-3.782L16.637 43.84h80.787L87.331 92.871a5.254 5.254 0 0 1-5.091 3.782H10.078zm91.535 7.394c.036 2.403-1.891 4.382-4.308 4.424h-72.16c-2.42-.04-4.352-2.018-4.32-4.424v-2.673h60.443c5.348 0 10.484-3.814 11.449-8.503l8.897-43.215v54.391z"/><path d="M34.814 33c1.243 0 2.251-1.057 2.251-2.36 0-1.305-1.008-2.362-2.25-2.362-2.04 0-4.313-3.194-4.313-7.778s2.272-7.778 4.312-7.778c1.227 0 2.536 1.163 3.386 3.084H43C41.716 11.19 38.578 8 34.814 8 29.871 8 26 13.49 26 20.5c0 7.009 3.871 12.5 8.814 12.5z"/>
+  
+  </svg>
+</div>
+
+  <span>April 16, 2024</span>
+</div>
+
+<figure><img src="https://tejirimayone.com.ng/post/images/javascript_reduce.png"
+         alt="Javascript Reducer"/><figcaption>
+            <p>Javascript Reducer</p>
+        </figcaption>
+</figure>
+
+<h2 id="introduction">Introduction</h2>
+<p>The <strong><code>reduce()</code></strong> method is a powerful higher-order function in JavaScript that allows you to reduce an array to a single value by iteratively processing each element of the array. It takes a callback function as its first argument, and this function is executed on each element of the array, with the output being fed back into the next iteration of the function. The <strong><code>reduce()</code></strong> method also takes an optional second argument, which is the initial value of the accumulator.</p>
+<h4 id="the-callback-function-passed-to-the-reduce-method-takes-two-arguments">The callback function passed to the <strong><code>reduce()</code></strong> method takes two arguments:</h4>
+<ul>
+<li>
+<p><strong>Accumulator (required):</strong> This is the value returned from the previous iteration of the function, or the initial value if it is the first iteration.</p>
+</li>
+<li>
+<p><strong>Current Value (required):</strong> This is the current element of the array being processed.</p>
+</li>
+</ul>
+<h4 id="it-is-also-possible-to-pass-two-additional-optional-arguments-to-the-callback-function">It is also possible to pass two additional optional arguments to the callback function:</h4>
+<ol>
+<li>
+<p><strong>Index (optional):</strong> This is the index of the current element being processed.</p>
+</li>
+<li>
+<p><strong>Array (optional):</strong> This is the original array that is being processed.</p>
+</li>
+</ol>
+<h4 id="here-is-an-example-of-how-to-use-reduce-to-sum-an-array-of-numbers">Here is an example of how to use <code>reduce()</code> to sum an array of numbers:</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-YAML" data-lang="YAML"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">const numbers = [1, 2, 3, 4, 5];</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="l">const sum = numbers.reduce((accumulator, currentValue) =&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>{<span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="l">return accumulator + currentValue;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span>}<span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="l">);</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">console.log(sum); // Output</span><span class="p">:</span><span class="w"> </span><span class="m">15</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
+</span></span></span></code></pre></div><p>In this example, the <strong><code>reduce()</code></strong> method takes a callback function that adds the accumulator (which starts at 0) to the current value of each element of the array. The result of each iteration is passed as the accumulator to the next iteration, until all elements have been processed.</p>
+<h4 id="here-are-a-few-more-use-cases-for-reduce">Here are a few more use cases for <strong><code>reduce()</code></strong>:</h4>
+<ul>
+<li>Find the maximum value in an array:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl">const numbers = [1, 2, 3, 4, 5];
+</span></span><span class="line"><span class="cl">const max = numbers.reduce((accumulator, currentValue) =&gt; {
+</span></span><span class="line"><span class="cl">  return Math.max(accumulator, currentValue);
+</span></span><span class="line"><span class="cl">}, 0);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">console.log(max); // Output: 5
+</span></span></code></pre></div><ul>
+<li>Concatenate an array of strings:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl">const words = [&#39;The&#39;, &#39;quick&#39;, &#39;brown&#39;, &#39;fox&#39;];
+</span></span><span class="line"><span class="cl">const sentence = words.reduce((accumulator, currentValue) =&gt; {
+</span></span><span class="line"><span class="cl">  return `${accumulator} ${currentValue}`;
+</span></span><span class="line"><span class="cl">});
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">console.log(sentence); // Output: &#34;The quick brown fox&#34;
+</span></span></code></pre></div><ul>
+<li>Group an array of objects by a specific property:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl">const people = [  { name: &#39;Alice&#39;, age: 25 },  { name: &#39;Bob&#39;, age: 30 },  { name: &#39;Charlie&#39;, age: 25 },  { name: &#39;Dave&#39;, age: 35 },];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">const groupedByAge = people.reduce((accumulator, currentValue) =&gt; {
+</span></span><span class="line"><span class="cl">  const age = currentValue.age;
+</span></span><span class="line"><span class="cl">  if (!accumulator[age]) {
+</span></span><span class="line"><span class="cl">    accumulator[age] = [];
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">  accumulator[age].push(currentValue);
+</span></span><span class="line"><span class="cl">  return accumulator;
+</span></span><span class="line"><span class="cl">}, {});
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">console.log(groupedByAge);
+</span></span><span class="line"><span class="cl">// Output: {25: [{name: &#34;Alice&#34;, age: 25}, {name: &#34;Charlie&#34;, age: 25}]}
+</span></span></code></pre></div><p>Thanks for reading please don`t forget to like or share</p>
 
 </main>
 </div>
