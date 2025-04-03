@@ -2,50 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My Blog on Tejiri Mayone</title>
-    <link>https://tejirimayone.com.ng/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in My Blog on Tejiri Mayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
-    <lastBuildDate>Tue, 17 Dec 2024 16:21:54 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Apr 2025 21:44:56 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Strings in PHP: Mutable, Not Immutable</title>
+      <link>http://localhost:1313/post/string_in_php_not_immutable/</link>
+      <pubDate>Thu, 03 Apr 2025 21:44:56 +0100</pubDate>
+      <guid>http://localhost:1313/post/string_in_php_not_immutable/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/images/php-logo-png.webp&#34;&#xA;         alt=&#34;strings in PHP are not immutable with a comparison with Java&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;strings in PHP are not immutable with a comparison with Java&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to JavaScript Web Workers A Beginner&#39;s Guide</title>
+      <link>http://localhost:1313/post/javascript_web_workers/</link>
+      <pubDate>Mon, 13 Jan 2025 14:16:35 +0100</pubDate>
+      <guid>http://localhost:1313/post/javascript_web_workers/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/images/web-worker.png&#34;&#xA;         alt=&#34;Javascript Web Worker: A Beginner&amp;amp;rsquo;s Guide&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;Javascript Web Worker: A Beginner&amp;rsquo;s Guide&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
+    </item>
     <item>
       <title>How to Build a WordPress Website and Host It for Free</title>
-      <link>https://tejirimayone.com.ng/post/how_to_host_free_wordpress_for_free/</link>
+      <link>http://localhost:1313/post/how_to_host_free_wordpress_for_free/</link>
       <pubDate>Tue, 17 Dec 2024 16:21:54 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/how_to_host_free_wordpress_for_free/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/how_to_host_free_wordpress_for_free.jpeg&#34;
-         alt=&#34;Javascript Reducer&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;Javascript Reducer&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+      <guid>http://localhost:1313/post/how_to_host_free_wordpress_for_free/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/images/how_to_host_free_wordpress_for_free.jpeg&#34;&#xA;         alt=&#34;Javascript Reducer&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;Javascript Reducer&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>The power of the Javascript reduce() function.</title>
-      <link>https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/</link>
+      <link>http://localhost:1313/post/the-power-of-the-javascript-reduce-function/</link>
       <pubDate>Tue, 16 Apr 2024 10:33:46 +0200</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/the-power-of-the-javascript-reduce-function/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/javascript_reduce.png&#34;
-         alt=&#34;Javascript Reducer&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;Javascript Reducer&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+      <guid>http://localhost:1313/post/the-power-of-the-javascript-reduce-function/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/images/javascript_reduce.png&#34;&#xA;         alt=&#34;Javascript Reducer&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;Javascript Reducer&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
-    
     <item>
       <title>How to create a simple floating menu with HTML and CSS</title>
-      <link>https://tejirimayone.com.ng/post/how_to_create_a_simple_floating_menu_with_html_and_css/</link>
+      <link>http://localhost:1313/post/how_to_create_a_simple_floating_menu_with_html_and_css/</link>
       <pubDate>Wed, 01 Mar 2023 09:50:46 +0200</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/post/how_to_create_a_simple_floating_menu_with_html_and_css/</guid>
-      <description>&lt;figure&gt;&lt;img src=&#34;https://tejirimayone.com.ng/post/images/how_to_create_a_simple_floating_menu_with_html_and_css.jpeg&#34;
-         alt=&#34;floating menu with HTML and CSS&#34;/&gt;&lt;figcaption&gt;
-            &lt;p&gt;floating menu with HTML and CSS&lt;/p&gt;
-        &lt;/figcaption&gt;
-&lt;/figure&gt;</description>
+      <guid>http://localhost:1313/post/how_to_create_a_simple_floating_menu_with_html_and_css/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;http://localhost:1313/post/images/how_to_create_a_simple_floating_menu_with_html_and_css.jpeg&#34;&#xA;         alt=&#34;floating menu with HTML and CSS&#34;/&gt;&lt;figcaption&gt;&#xA;            &lt;p&gt;floating menu with HTML and CSS&lt;/p&gt;&#xA;        &lt;/figcaption&gt;&#xA;&lt;/figure&gt;</description>
     </item>
-    
   </channel>
 </rss>

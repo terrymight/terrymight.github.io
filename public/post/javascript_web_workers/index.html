@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Introduction to JavaScript Web Workers A Beginner&#39;s Guide - Tejiri Mayone</title>
+  <link rel='canonical' href='http://localhost:1313/post/javascript_web_workers/' />
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<meta name='description' content='' />
+<meta name='theme-color' content='#112F41' />
+<meta name="keywords" content='laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja' />
+<meta name="author" content='Tejiri Mayone' />
+<meta name="robots" content="index, follow" />
+<meta name="generator" content="Hugo 0.110.0" />
+
+<meta property="og:url" content='https://tejirimayone.com.ng/' />
+<meta property="og:site_name" content='https://tejirimayone.com.ng/' />
+<meta property="og:image" content='https://tejirimayone.com.ng/images/sample.jpg' />
+<meta property="og:description" content='Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications.' />
+<meta property="og:url" content='https://tejirimayone.com.ng/' />
+<meta name="og:keywords" content='laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja' />
+<meta name="og:type" content='website' />
+
+<meta itemprop="description" content='Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications.' />
+<meta itemprop="name" content="Home">
+
+
+
+<meta name="generator" content="Hugo 0.123.7">
+  
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
+<link rel="stylesheet" href="http://localhost:1313/syntax.min.css" integrity="" media="screen">
+
+  <meta property="og:title" content="Introduction to JavaScript Web Workers A Beginner&#39;s Guide" />
+<meta property="og:description" content="
+            Javascript Web Worker: A Beginner&rsquo;s Guide
+        
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/javascript_web_workers/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-01-13T14:16:35+01:00" />
+<meta property="article:modified_time" content="2025-01-13T14:16:35+01:00" />
+
+
+  <meta itemprop="name" content="Introduction to JavaScript Web Workers A Beginner&#39;s Guide">
+<meta itemprop="description" content="
+            Javascript Web Worker: A Beginner&rsquo;s Guide
+        
+"><meta itemprop="datePublished" content="2025-01-13T14:16:35+01:00" />
+<meta itemprop="dateModified" content="2025-01-13T14:16:35+01:00" />
+<meta itemprop="wordCount" content="630">
+<meta itemprop="keywords" content="HTML,JAVASCRIPT," />
+</head>
+<body>
+
+  <header style="background-image:linear-gradient(
+      rgba(0,0,14,0.4),rgba(0,0,0,0.4)
+    ),url(&#39;http://localhost:1313/images/tejiri_bg.jpeg&#39;)">
+  <div class="intro">
+    <div class="logo-container">
+      <a href="http://localhost:1313/">
+        <img src='http://localhost:1313/images/profile_img.jpeg' alt="Profile HOME" class="rounded-logo">
+      </a>
+    </div>
+    <h2>Hi, I'm Mayone 👋</h2>
+    <h3>I'm a Web Developer and Entrepreneur</h3>
+    <div class="menu">
+      
+
+        <p>
+            <a href="http://localhost:1313/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/portfolio/">
+                Portfolio
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/post/">
+                My Blog
+            </a>
+        </p>
+
+      
+        
+        <p>
+            <a href="mailto:hello@tejirimayone.com.ng" target="_blank" rel="external">
+                
+            </a>
+        </p>
+      
+    </div>
+  </div>
+
+  <div class="socials">
+      
+  
+    <a href="https://github.com/terrymight" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/tejiri-mayone-2090a266/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://x.com/bobjeorge4real" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.youtube.com/@tdevclass" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M47.95 43.664l24.438 13.887L47.951 71.44V43.664zM115 12.321v90.358c0 6.802-5.519 12.321-12.321 12.321H12.32C5.52 115 0 109.481 0 102.679V12.32C0 5.52 5.519 0 12.321 0h90.358C109.48 0 115 5.519 115 12.321zm-10.781 45.256s0-15.3-1.951-22.64c-1.078-4.056-4.236-7.24-8.266-8.318-7.264-1.976-36.502-1.976-36.502-1.976s-29.238 0-36.502 1.976c-4.03 1.079-7.188 4.262-8.266 8.317-1.95 7.316-1.95 22.641-1.95 22.641s0 15.3 1.95 22.64c1.078 4.056 4.236 7.111 8.266 8.19 7.264 1.95 36.502 1.95 36.502 1.95s29.238 0 36.502-1.976c4.03-1.079 7.188-4.133 8.266-8.189 1.95-7.316 1.95-22.615 1.95-22.615z" />
+  
+  </svg>
+</div>
+</a>
+  
+
+  </div>
+</header>
+
+<div class="mobile-header">
+  <p> Tejiri Mayone </p>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="overlay-menu">
+  <header>
+    <div class="intro">
+      <div class="logo-container">
+        <a href="http://localhost:1313/">
+          <img src='http://localhost:1313/images/profile_img.jpeg' alt="Profile HOME" class="rounded-logo">
+        </a>
+      </div>
+      <h2>Hi, I'm Mayone 👋</h2>
+      <h3>I'm a Web Developer and Entrepreneur</h3>
+      <div class="menu">
+        
+
+        <p>
+            <a href="http://localhost:1313/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/portfolio/">
+                Portfolio
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/post/">
+                My Blog
+            </a>
+        </p>
+
+        
+          
+          <p>
+              <a href="mailto:hello@tejirimayone.com.ng" target="_blank" rel="external">
+                  
+              </a>
+          </p>
+        
+      </div>
+    </div>
+
+    <div class="socials">
+        
+  
+    <a href="https://github.com/terrymight" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/tejiri-mayone-2090a266/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://x.com/bobjeorge4real" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.youtube.com/@tdevclass" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M47.95 43.664l24.438 13.887L47.951 71.44V43.664zM115 12.321v90.358c0 6.802-5.519 12.321-12.321 12.321H12.32C5.52 115 0 109.481 0 102.679V12.32C0 5.52 5.519 0 12.321 0h90.358C109.48 0 115 5.519 115 12.321zm-10.781 45.256s0-15.3-1.951-22.64c-1.078-4.056-4.236-7.24-8.266-8.318-7.264-1.976-36.502-1.976-36.502-1.976s-29.238 0-36.502 1.976c-4.03 1.079-7.188 4.262-8.266 8.317-1.95 7.316-1.95 22.641-1.95 22.641s0 15.3 1.95 22.64c1.078 4.056 4.236 7.111 8.266 8.19 7.264 1.95 36.502 1.95 36.502 1.95s29.238 0 36.502-1.976c4.03-1.079 7.188-4.133 8.266-8.189 1.95-7.316 1.95-22.615 1.95-22.615z" />
+  
+  </svg>
+</div>
+</a>
+  
+
+    </div>
+  </header>
+</div>
+
+  <div class="content-wrapper">
+    
+      <div class="breadcrumb">
+  
+
+
+
+
+
+<span >
+  <a href="http://localhost:1313/">HOME</a>
+   / 
+</span>
+
+
+<span >
+  <a href="http://localhost:1313/post/">My Blog</a>
+   / 
+</span>
+
+
+<span  class="active">
+  <a href="http://localhost:1313/post/javascript_web_workers/">Introduction to JavaScript Web Workers A Beginner&#39;s Guide</a>
+  
+</span>
+
+</div>
+
+    
+    <main id="content" class="post">
+
+<h1>Introduction to JavaScript Web Workers A Beginner&#39;s Guide</h1>
+<div class="reading-time">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M57.5 11C29.05 11 6 34.05 6 62.5S29.05 114 57.5 114 109 90.95 109 62.5 85.95 11 57.5 11zm0 93.032c-22.947 0-41.532-18.585-41.532-41.532 0-22.947 18.585-41.532 41.532-41.532 22.947 0 41.532 18.585 41.532 41.532 0 22.947-18.585 41.532-41.532 41.532zm12.833-21.68L52.703 69.54a2.508 2.508 0 0 1-1.018-2.015V33.427a2.5 2.5 0 0 1 2.492-2.492h6.646a2.5 2.5 0 0 1 2.492 2.492v29.426l13.871 10.092c1.122.81 1.35 2.368.54 3.49l-3.904 5.377a2.51 2.51 0 0 1-3.489.54z"/>
+  
+  </svg>
+</div>
+
+  <span>3 minutes</span>
+</div>
+
+<div class="published-date">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M77.577 51.23a1.807 1.807 0 0 0-2.2.342l-27.562 27.79a1.807 1.807 0 0 1-2.2.342l-14.008-9.702a1.807 1.807 0 0 0-2.2.342l-1.952 1.968c-.287.22-.456.568-.455.936.001.37.172.716.46.934L45.637 86.77a1.807 1.807 0 0 0 2.2-.342l31.709-31.97c.287-.22.456-.567.455-.936a1.175 1.175 0 0 0-.46-.933l-1.963-1.36z"/><path d="M97.304 20H80.512c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.347.023-.685.04-1.026H34.579c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.22.019-.434.025-.652a9.788 9.788 0 0 0-5.697 4.471 9.683 9.683 0 0 0-2.65 4.764L1.158 92.871c-.965 4.689 2.6 8.503 7.948 8.503h6.334v2.673c-.077 5.41 4.263 9.861 9.705 9.953h72.16c5.438-.095 9.774-4.546 9.694-9.953V29.953c.08-5.407-4.256-9.858-9.695-9.953zM10.078 96.653c-2.378 0-3.964-1.697-3.535-3.782L16.637 43.84h80.787L87.331 92.871a5.254 5.254 0 0 1-5.091 3.782H10.078zm91.535 7.394c.036 2.403-1.891 4.382-4.308 4.424h-72.16c-2.42-.04-4.352-2.018-4.32-4.424v-2.673h60.443c5.348 0 10.484-3.814 11.449-8.503l8.897-43.215v54.391z"/><path d="M34.814 33c1.243 0 2.251-1.057 2.251-2.36 0-1.305-1.008-2.362-2.25-2.362-2.04 0-4.313-3.194-4.313-7.778s2.272-7.778 4.312-7.778c1.227 0 2.536 1.163 3.386 3.084H43C41.716 11.19 38.578 8 34.814 8 29.871 8 26 13.49 26 20.5c0 7.009 3.871 12.5 8.814 12.5z"/>
+  
+  </svg>
+</div>
+
+  <span>January 13, 2025</span>
+</div>
+
+<figure><img src="http://localhost:1313/post/images/web-worker.png"
+         alt="Javascript Web Worker: A Beginner&amp;rsquo;s Guide"/><figcaption>
+            <p>Javascript Web Worker: A Beginner&rsquo;s Guide</p>
+        </figcaption>
+</figure>
+
+<p>In modern web development, performance is a key factor for delivering a seamless user experience.</p>
+<h3 id="introduction">Introduction</h3>
+<p>When JavaScript is tasked with heavy computations or long-running operations, it can block the main thread, causing the user interface to freeze or become unresponsive. This is where Web Workers come in handy. They allow you to run JavaScript code in the background, separate from the main thread, ensuring that your web application remains smooth and responsive.</p>
+<p>In this blog, we will explore what Web Workers are, why they are useful, and how to create a simple Web Worker.</p>
+<h4 id="what-are-web-workers">What Are Web Workers?</h4>
+<p>A Web Worker is a JavaScript script that runs in the background, independent of other scripts, without affecting the performance of the main thread. This means you can offload intensive tasks, such as data processing or API calls, to a Web Worker, leaving the main thread free to handle user interactions and updates to the UI.</p>
+<h4 id="creating-a-simple-web-worker">Creating a Simple Web Worker</h4>
+<p>Let’s dive into a simple example to understand how Web Workers work. We will create a Web Worker that sort large float values.</p>
+<h4 id="step-1-create-the-worker-script">Step 1: Create the Worker Script</h4>
+<p>Save the following code in a file called worker.js:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl">onmessage = (e) =&gt; {
+</span></span><span class="line"><span class="cl">  console.log(&#34;Worker: Message received from main script&#34;);
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  const result = e.data[0] * e.data[1];
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  if (isNaN(result)) {
+</span></span><span class="line"><span class="cl">    postMessage(&#34;Please write two numbers&#34;);
+</span></span><span class="line"><span class="cl">  } else {
+</span></span><span class="line"><span class="cl">    const workerResult = &#34;Result: &#34; + result;
+</span></span><span class="line"><span class="cl">    console.log(&#34;Worker: Posting message back to main script&#34;);
+</span></span><span class="line"><span class="cl">    postMessage(workerResult);
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">};
+</span></span></code></pre></div><p>Here, the <code>onmessage</code> event listens for messages sent from the main thread. Once it receives an array of numbers, it sorts and sends the result back using <code>postMessage</code>.</p>
+<h4 id="step-2-use-the-worker-in-the-main-script">Step 2: Use the Worker in the Main Script</h4>
+<p>In your <code>main.js</code> JavaScript file, create a Web Worker and communicate with it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">const p = document.querySelectorAll(&#39;p&#39;)
+</span></span><span class="line"><span class="cl">const arrlength = document.querySelector(&#39;span&#39;)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">const p1 = p[0]
+</span></span><span class="line"><span class="cl">const p2 = p[1]
+</span></span><span class="line"><span class="cl">const p3 = p[2]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">/**
+</span></span><span class="line"><span class="cl"> * @returns array with n values
+</span></span><span class="line"><span class="cl"> */
+</span></span><span class="line"><span class="cl">function randomGenerator(n){
+</span></span><span class="line"><span class="cl">    const number = []
+</span></span><span class="line"><span class="cl">    for(let i = 0; i <span class="p">&lt;</span> <span class="nt">n</span><span class="err">;</span> <span class="na">i</span> <span class="err">++){</span>
+</span></span><span class="line"><span class="cl">        <span class="na">number</span><span class="err">.</span><span class="na">push</span><span class="err">(</span><span class="na">Math</span><span class="err">.</span><span class="na">floor</span><span class="err">(</span><span class="na">Math</span><span class="err">.</span><span class="na">random</span><span class="err">()</span> <span class="err">*</span> <span class="na">9999</span><span class="err">))</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">return</span> <span class="na">number</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">/**</span>
+</span></span><span class="line"><span class="cl"> <span class="err">*</span> <span class="err">@</span><span class="na">param</span> <span class="err">{*}</span> <span class="na">func</span> <span class="na">pass</span> <span class="na">in</span> <span class="na">our</span> <span class="na">quick</span> <span class="na">sort</span> <span class="na">function</span> <span class="na">for</span> <span class="na">processing</span>
+</span></span><span class="line"><span class="cl"> <span class="err">*</span> <span class="err">@</span><span class="na">param</span> <span class="err">{*}</span> <span class="na">numbers</span> <span class="na">values</span> <span class="na">to</span> <span class="na">be</span> <span class="na">sorted</span>
+</span></span><span class="line"><span class="cl"> <span class="err">*</span> <span class="err">@</span><span class="na">returns</span> <span class="na">sorted</span> <span class="na">number</span> <span class="err">&amp;&amp;</span> <span class="na">time</span> <span class="na">take</span> <span class="na">to</span> <span class="na">complete</span>
+</span></span><span class="line"><span class="cl"> <span class="err">*/</span>
+</span></span><span class="line"><span class="cl"><span class="na">function</span> <span class="na">measureTime</span><span class="err">(</span><span class="na">func</span><span class="err">,</span><span class="na">numbers</span><span class="err">){</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="na">if</span> <span class="err">(</span><span class="na">window</span><span class="err">.</span><span class="na">Worker</span><span class="err">)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="na">const</span> <span class="na">myWorker </span><span class="o">=</span> <span class="s">new</span> <span class="na">Worker</span><span class="err">(&#34;</span><span class="na">worker</span><span class="err">.</span><span class="na">js</span><span class="err">&#34;);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="na">const</span> <span class="na">timeStart </span><span class="o">=</span> <span class="s">performance.now()</span>
+</span></span><span class="line"><span class="cl">    <span class="na">const</span> <span class="na">sortedNumber </span><span class="o">=</span> <span class="s">func(numbers)</span>
+</span></span><span class="line"><span class="cl">    <span class="na">const</span> <span class="na">endTime </span><span class="o">=</span> <span class="s">performance.now()</span>
+</span></span><span class="line"><span class="cl">    <span class="na">const</span> <span class="na">timeTaken </span><span class="o">=</span> <span class="s">endTime</span> <span class="na">-</span> <span class="na">timeStart</span>
+</span></span><span class="line"><span class="cl">    <span class="na">return</span> <span class="err">{</span><span class="na">sortedNumber</span><span class="err">,</span> <span class="na">timeTaken</span><span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">/**</span>
+</span></span><span class="line"><span class="cl"> <span class="err">*</span> <span class="na">Number</span> <span class="na">to</span> <span class="na">generated</span>
+</span></span><span class="line"><span class="cl"> <span class="err">*/</span>
+</span></span><span class="line"><span class="cl"><span class="na">const</span> <span class="na">numb </span><span class="o">=</span> <span class="s">20</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">const</span> <span class="na">randomNumb </span><span class="o">=</span> <span class="s">randomGenerator(numb)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="na">const</span> <span class="err">{</span><span class="na">sortedNumber</span><span class="err">,</span> <span class="na">timeTaken</span> <span class="err">}</span> <span class="err">=</span> <span class="na">measureTime</span><span class="err">(</span><span class="na">sortjs</span><span class="err">,</span><span class="na">randomNumb</span><span class="err">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">//</span> <span class="na">array</span> <span class="na">length</span>
+</span></span><span class="line"><span class="cl"><span class="na">arrlength</span><span class="err">.</span><span class="na">textContent </span><span class="o">=</span> <span class="s">numb</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">//</span> <span class="na">Random</span> <span class="na">numbers</span>
+</span></span><span class="line"><span class="cl"><span class="na">p1</span><span class="err">.</span><span class="na">textContent </span><span class="o">=</span> <span class="s">randomNumb</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">//</span> <span class="na">Sorted</span> <span class="na">Number</span> <span class="na">array</span>
+</span></span><span class="line"><span class="cl"><span class="na">p2</span><span class="err">.</span><span class="na">textContent </span><span class="o">=</span><span class="s">sortedNumber</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="err">//</span> <span class="na">Time</span> <span class="na">take</span> <span class="na">to</span> <span class="na">complete</span> <span class="na">the</span> <span class="na">sorting</span>
+</span></span><span class="line"><span class="cl"><span class="na">p3</span><span class="err">.</span><span class="na">textContent </span><span class="o">=</span> <span class="s">timeTaken</span>
+</span></span></code></pre></div><h4 id="step-3-in-indexhtml-file">Step 3: In index.html File</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go-html-template" data-lang="go-html-template"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;UTF-8&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Quick Sorting<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Quick Sorting<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Generate <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> array length<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Random numbers<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Sorted Number array<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Time take to complete the sorting<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;js.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div><h4 id="in-this-code">In this code:</h4>
+<ul>
+<li>A new Worker instance is created, pointing to the worker.js script.</li>
+<li>The postMessage method sends the array of numbers to the worker.</li>
+<li>The onmessage event handler processes the result returned by the worker.</li>
+<li>Errors are caught using the onerror event handler.</li>
+</ul>
+<h4 id="advantages-of-web-workers">Advantages of Web Workers</h4>
+<ol>
+<li>Improved Performance: By offloading heavy tasks, Web Workers prevent UI freezes.</li>
+<li>Thread Isolation: Tasks in Web Workers run independently, avoiding conflicts with the main thread.</li>
+<li>Scalability: They can be used to handle multiple background tasks simultaneously.</li>
+</ol>
+<h4 id="limitations-of-web-workers">Limitations of Web Workers</h4>
+<ol>
+<li>No DOM Access: Workers cannot directly manipulate the DOM.</li>
+<li>Limited Browser Support: While most modern browsers support Web Workers, they may not work in older versions.</li>
+<li>Overhead: Creating and managing multiple workers can consume additional memory and resources.</li>
+</ol>
+
+</main>
+</div>
+<footer>
+  <div class="footer-wrapper">
+    <p>Made with ❤️ &mdash; Powered by <a href="https://gohugo.io/" target="_blank"
+        rel="external">Hugo</a> </p>
+    <p>© copyright 2024</p>
+  </div>
+</footer>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Raleway:400,400i,600" rel="stylesheet">
+
+<script type="text/javascript">
+  document.querySelector('.mobile-header').addEventListener('click', function () {
+    var om = document.querySelector(".overlay-menu");
+    if (document.querySelector('.hamburger').classList.contains("cross")) {
+      document.querySelector('.hamburger').classList.remove("cross");
+      om.style.display = "none";
+      om.style.width = "0%";
+      om.style.height = "0%";
+    }
+    else {
+      document.querySelector('.hamburger').classList.add("cross");
+      om.style.width = "100%";
+      om.style.height = "100vh";
+      om.style.display = "block";
+    }
+  });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang='en'><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Strings in PHP: Mutable, Not Immutable - Tejiri Mayone</title>
+  <link rel='canonical' href='http://localhost:1313/post/string_in_php_not_immutable/' />
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+<meta name='description' content='' />
+<meta name='theme-color' content='#112F41' />
+<meta name="keywords" content='laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja' />
+<meta name="author" content='Tejiri Mayone' />
+<meta name="robots" content="index, follow" />
+<meta name="generator" content="Hugo 0.110.0" />
+
+<meta property="og:url" content='https://tejirimayone.com.ng/' />
+<meta property="og:site_name" content='https://tejirimayone.com.ng/' />
+<meta property="og:image" content='https://tejirimayone.com.ng/images/sample.jpg' />
+<meta property="og:description" content='Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications.' />
+<meta property="og:url" content='https://tejirimayone.com.ng/' />
+<meta name="og:keywords" content='laravel developer, php developer, wordpress developer, web developer, angular developer, Developer in Nigeria, developer in Abuja' />
+<meta name="og:type" content='website' />
+
+<meta itemprop="description" content='Am a skilled web developer specialized in Laravel and Angular 😊. With a strong background in these technologies, I adeptly build robust, scalable, and dynamic web applications.' />
+<meta itemprop="name" content="Home">
+
+
+
+<meta name="generator" content="Hugo 0.123.7">
+  
+
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/sass/style.min.eabe1aa4bd266a15f7b39b122bd6a5cc75cb067e5373631ac21d7815d6240d6f.css" integrity="sha256-6r4apL0mahX3s5sSK9alzHXLBn5Tc2Mawh14FdYkDW8=" media="screen">
+<link rel="stylesheet" href="http://localhost:1313/syntax.min.css" integrity="" media="screen">
+
+  <meta property="og:title" content="Strings in PHP: Mutable, Not Immutable" />
+<meta property="og:description" content="
+            strings in PHP are not immutable with a comparison with Java
+        
+" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/string_in_php_not_immutable/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-04-03T21:44:56+01:00" />
+<meta property="article:modified_time" content="2025-04-03T21:44:56+01:00" />
+
+
+  <meta itemprop="name" content="Strings in PHP: Mutable, Not Immutable">
+<meta itemprop="description" content="
+            strings in PHP are not immutable with a comparison with Java
+        
+"><meta itemprop="datePublished" content="2025-04-03T21:44:56+01:00" />
+<meta itemprop="dateModified" content="2025-04-03T21:44:56+01:00" />
+<meta itemprop="wordCount" content="701">
+<meta itemprop="keywords" content="PHP,LARAVEL," />
+</head>
+<body>
+
+  <header style="background-image:linear-gradient(
+      rgba(0,0,14,0.4),rgba(0,0,0,0.4)
+    ),url(&#39;http://localhost:1313/images/tejiri_bg.jpeg&#39;)">
+  <div class="intro">
+    <div class="logo-container">
+      <a href="http://localhost:1313/">
+        <img src='http://localhost:1313/images/profile_img.jpeg' alt="Profile My Blog" class="rounded-logo">
+      </a>
+    </div>
+    <h2>Hi, I'm Mayone 👋</h2>
+    <h3>I'm a Web Developer and Entrepreneur</h3>
+    <div class="menu">
+      
+
+        <p>
+            <a href="http://localhost:1313/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/portfolio/">
+                Portfolio
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/post/">
+                My Blog
+            </a>
+        </p>
+
+      
+        
+        <p>
+            <a href="mailto:hello@tejirimayone.com.ng" target="_blank" rel="external">
+                
+            </a>
+        </p>
+      
+    </div>
+  </div>
+
+  <div class="socials">
+      
+  
+    <a href="https://github.com/terrymight" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/tejiri-mayone-2090a266/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://x.com/bobjeorge4real" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.youtube.com/@tdevclass" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M47.95 43.664l24.438 13.887L47.951 71.44V43.664zM115 12.321v90.358c0 6.802-5.519 12.321-12.321 12.321H12.32C5.52 115 0 109.481 0 102.679V12.32C0 5.52 5.519 0 12.321 0h90.358C109.48 0 115 5.519 115 12.321zm-10.781 45.256s0-15.3-1.951-22.64c-1.078-4.056-4.236-7.24-8.266-8.318-7.264-1.976-36.502-1.976-36.502-1.976s-29.238 0-36.502 1.976c-4.03 1.079-7.188 4.262-8.266 8.317-1.95 7.316-1.95 22.641-1.95 22.641s0 15.3 1.95 22.64c1.078 4.056 4.236 7.111 8.266 8.19 7.264 1.95 36.502 1.95 36.502 1.95s29.238 0 36.502-1.976c4.03-1.079 7.188-4.133 8.266-8.189 1.95-7.316 1.95-22.615 1.95-22.615z" />
+  
+  </svg>
+</div>
+</a>
+  
+
+  </div>
+</header>
+
+<div class="mobile-header">
+  <p> Tejiri Mayone </p>
+  <div class="hamburger">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="overlay-menu">
+  <header>
+    <div class="intro">
+      <div class="logo-container">
+        <a href="http://localhost:1313/">
+          <img src='http://localhost:1313/images/profile_img.jpeg' alt="Profile My Blog" class="rounded-logo">
+        </a>
+      </div>
+      <h2>Hi, I'm Mayone 👋</h2>
+      <h3>I'm a Web Developer and Entrepreneur</h3>
+      <div class="menu">
+        
+
+        <p>
+            <a href="http://localhost:1313/about/">
+                About
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/portfolio/">
+                Portfolio
+            </a>
+        </p>
+
+        <p>
+            <a href="http://localhost:1313/post/">
+                My Blog
+            </a>
+        </p>
+
+        
+          
+          <p>
+              <a href="mailto:hello@tejirimayone.com.ng" target="_blank" rel="external">
+                  
+              </a>
+          </p>
+        
+      </div>
+    </div>
+
+    <div class="socials">
+        
+  
+    <a href="https://github.com/terrymight" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM71.182 98.494c-2.156.385-2.952-.95-2.952-2.053 0-1.386.051-8.471.051-14.195 0-4.005-1.335-6.546-2.9-7.881C74.878 73.313 84.89 72.003 84.89 55.6c0-4.671-1.669-7.007-4.39-10.01.436-1.105 1.9-5.648-.436-11.552-3.568-1.104-11.731 4.595-11.731 4.595-3.389-.95-7.06-1.438-10.679-1.438-3.62 0-7.29.488-10.679 1.438 0 0-8.163-5.699-11.73-4.595-2.337 5.878-.899 10.422-.437 11.551-2.72 3.004-4.004 5.34-4.004 10.011 0 16.326 9.574 17.712 19.072 18.765-1.232 1.104-2.336 3.003-2.72 5.724-2.44 1.104-8.677 3.004-12.4-3.568-2.335-4.056-6.545-4.39-6.545-4.39-4.159-.05-.282 2.619-.282 2.619 2.772 1.283 4.723 6.212 4.723 6.212 2.49 7.624 14.4 5.057 14.4 5.057 0 3.568.052 9.37.052 10.422 0 1.104-.77 2.438-2.952 2.053C27.21 92.821 15.35 76.701 15.35 57.86c0-23.564 18.02-41.456 41.585-41.456s42.663 17.892 42.663 41.456c.026 18.842-11.474 34.988-28.416 40.635zM46 82.81c-.488.103-.95-.102-1.001-.436-.051-.385.282-.719.77-.822.488-.05.95.154 1.001.488.077.334-.257.668-.77.77zm-2.439-.23c0 .333-.385.615-.898.615-.565.052-.95-.23-.95-.616 0-.333.385-.616.899-.616.487-.051.95.231.95.616zm-3.516-.283c-.103.334-.616.488-1.053.334-.488-.103-.821-.488-.719-.822.103-.334.617-.488 1.053-.385.513.154.847.54.719.873zm-3.158-1.386c-.23.282-.718.23-1.104-.154-.385-.334-.487-.822-.23-1.053.23-.282.718-.23 1.103.154.334.334.462.847.231 1.053zm-2.336-2.336c-.23.154-.667 0-.95-.385-.282-.385-.282-.822 0-1.001.283-.231.72-.052.95.333.283.385.283.847 0 1.053zm-1.668-2.49c-.231.23-.616.103-.899-.154-.282-.334-.333-.719-.102-.899.23-.23.616-.102.898.154.282.334.334.72.103.899zm-1.72-1.9c-.103.231-.436.283-.719.103-.334-.154-.488-.436-.385-.667.103-.154.385-.231.719-.103.334.18.488.462.385.667z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.linkedin.com/in/tejiri-mayone-2090a266/" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M106.786 0H8.189C3.67 0 0 3.722 0 8.291v98.418C0 111.278 3.67 115 8.189 115h98.597c4.518 0 8.214-3.722 8.214-8.291V8.29C115 3.722 111.304 0 106.786 0zm-72.03 98.571H17.713V43.69h17.07V98.57h-.025zm-8.522-62.377c-5.467 0-9.882-4.44-9.882-9.883 0-5.442 4.415-9.882 9.882-9.882 5.442 0 9.883 4.44 9.883 9.882a9.87 9.87 0 0 1-9.883 9.883zm72.414 62.377H81.604V71.875c0-6.366-.129-14.555-8.856-14.555-8.882 0-10.242 6.931-10.242 14.093V98.57H45.46V43.69h16.352v7.495h.23c2.285-4.312 7.855-8.856 16.147-8.856 17.25 0 20.458 11.372 20.458 26.158V98.57z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://x.com/bobjeorge4real" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M102.679 0H12.32C5.52 0 0 5.519 0 12.321v90.358C0 109.48 5.519 115 12.321 115h90.358c6.802 0 12.321-5.519 12.321-12.321V12.32C115 5.52 109.481 0 102.679 0zM90.126 40.763c.051.72.051 1.464.051 2.182 0 22.256-16.942 47.9-47.9 47.9-9.548 0-18.404-2.772-25.848-7.547 1.36.154 2.67.205 4.055.205 7.881 0 15.12-2.67 20.895-7.187-7.392-.154-13.604-5.006-15.735-11.68 2.593.385 4.929.385 7.598-.308a16.837 16.837 0 0 1-13.476-16.531v-.205a16.824 16.824 0 0 0 7.598 2.13 16.8 16.8 0 0 1-7.496-14.016c0-3.131.822-6.006 2.285-8.496a47.803 47.803 0 0 0 34.705 17.61c-2.387-11.424 6.161-20.69 16.429-20.69 4.851 0 9.215 2.027 12.296 5.313a32.99 32.99 0 0 0 10.678-4.056 16.792 16.792 0 0 1-7.393 9.267c3.389-.36 6.674-1.31 9.703-2.618a35.437 35.437 0 0 1-8.445 8.727z"/>
+  
+  </svg>
+</div>
+</a>
+  
+
+  
+    <a href="https://www.youtube.com/@tdevclass" class="social-link" target="_blank" rel="noopener" ><div class="icon">
+  <svg width="35px" height="35px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M47.95 43.664l24.438 13.887L47.951 71.44V43.664zM115 12.321v90.358c0 6.802-5.519 12.321-12.321 12.321H12.32C5.52 115 0 109.481 0 102.679V12.32C0 5.52 5.519 0 12.321 0h90.358C109.48 0 115 5.519 115 12.321zm-10.781 45.256s0-15.3-1.951-22.64c-1.078-4.056-4.236-7.24-8.266-8.318-7.264-1.976-36.502-1.976-36.502-1.976s-29.238 0-36.502 1.976c-4.03 1.079-7.188 4.262-8.266 8.317-1.95 7.316-1.95 22.641-1.95 22.641s0 15.3 1.95 22.64c1.078 4.056 4.236 7.111 8.266 8.19 7.264 1.95 36.502 1.95 36.502 1.95s29.238 0 36.502-1.976c4.03-1.079 7.188-4.133 8.266-8.189 1.95-7.316 1.95-22.615 1.95-22.615z" />
+  
+  </svg>
+</div>
+</a>
+  
+
+    </div>
+  </header>
+</div>
+
+  <div class="content-wrapper">
+    
+      <div class="breadcrumb">
+  
+
+
+
+
+
+<span >
+  <a href="http://localhost:1313/">HOME</a>
+   / 
+</span>
+
+
+<span >
+  <a href="http://localhost:1313/post/">My Blog</a>
+   / 
+</span>
+
+
+<span  class="active">
+  <a href="http://localhost:1313/post/string_in_php_not_immutable/">Strings in PHP: Mutable, Not Immutable</a>
+  
+</span>
+
+</div>
+
+    
+    <main id="content" class="post">
+
+<h1>Strings in PHP: Mutable, Not Immutable</h1>
+<div class="reading-time">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M57.5 11C29.05 11 6 34.05 6 62.5S29.05 114 57.5 114 109 90.95 109 62.5 85.95 11 57.5 11zm0 93.032c-22.947 0-41.532-18.585-41.532-41.532 0-22.947 18.585-41.532 41.532-41.532 22.947 0 41.532 18.585 41.532 41.532 0 22.947-18.585 41.532-41.532 41.532zm12.833-21.68L52.703 69.54a2.508 2.508 0 0 1-1.018-2.015V33.427a2.5 2.5 0 0 1 2.492-2.492h6.646a2.5 2.5 0 0 1 2.492 2.492v29.426l13.871 10.092c1.122.81 1.35 2.368.54 3.49l-3.904 5.377a2.51 2.51 0 0 1-3.489.54z"/>
+  
+  </svg>
+</div>
+
+  <span>4 minutes</span>
+</div>
+
+<div class="published-date">
+  <div class="icon">
+  <svg width="18px" height="18px" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+  
+  <path d="M77.577 51.23a1.807 1.807 0 0 0-2.2.342l-27.562 27.79a1.807 1.807 0 0 1-2.2.342l-14.008-9.702a1.807 1.807 0 0 0-2.2.342l-1.952 1.968c-.287.22-.456.568-.455.936.001.37.172.716.46.934L45.637 86.77a1.807 1.807 0 0 0 2.2-.342l31.709-31.97c.287-.22.456-.567.455-.936a1.175 1.175 0 0 0-.46-.933l-1.963-1.36z"/><path d="M97.304 20H80.512c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.347.023-.685.04-1.026H34.579c-.041.34-.063.683-.064 1.026a5.986 5.986 0 0 0 1.256 4.1c.054.003.103.02.157.025a4.881 4.881 0 0 1 1.865-.025c3.05.562 4.984 3.907 4.32 7.47-.666 3.563-3.678 5.996-6.728 5.433a4.932 4.932 0 0 1-2.437-1.258c-6.018-1.378-10.445-7.795-10.445-15.745 0-.22.019-.434.025-.652a9.788 9.788 0 0 0-5.697 4.471 9.683 9.683 0 0 0-2.65 4.764L1.158 92.871c-.965 4.689 2.6 8.503 7.948 8.503h6.334v2.673c-.077 5.41 4.263 9.861 9.705 9.953h72.16c5.438-.095 9.774-4.546 9.694-9.953V29.953c.08-5.407-4.256-9.858-9.695-9.953zM10.078 96.653c-2.378 0-3.964-1.697-3.535-3.782L16.637 43.84h80.787L87.331 92.871a5.254 5.254 0 0 1-5.091 3.782H10.078zm91.535 7.394c.036 2.403-1.891 4.382-4.308 4.424h-72.16c-2.42-.04-4.352-2.018-4.32-4.424v-2.673h60.443c5.348 0 10.484-3.814 11.449-8.503l8.897-43.215v54.391z"/><path d="M34.814 33c1.243 0 2.251-1.057 2.251-2.36 0-1.305-1.008-2.362-2.25-2.362-2.04 0-4.313-3.194-4.313-7.778s2.272-7.778 4.312-7.778c1.227 0 2.536 1.163 3.386 3.084H43C41.716 11.19 38.578 8 34.814 8 29.871 8 26 13.49 26 20.5c0 7.009 3.871 12.5 8.814 12.5z"/>
+  
+  </svg>
+</div>
+
+  <span>April 3, 2025</span>
+</div>
+
+<figure><img src="http://localhost:1313/post/images/php-logo-png.webp"
+         alt="strings in PHP are not immutable with a comparison with Java"/><figcaption>
+            <p>strings in PHP are not immutable with a comparison with Java</p>
+        </figcaption>
+</figure>
+
+<p><strong>strings in PHP are not immutable</strong>—they are <strong>mutable</strong>. This is a key difference between the two languages. In PHP, strings can be modified directly without creating a new object or instance. However, I’ll explain how strings work in PHP, provide examples to demonstrate their mutability, and clarify why they behave this way. If you meant something different (e.g., a comparison with Java).</p>
+<h3 id="strings-in-php-mutable-not-immutable">Strings in PHP: Mutable, Not Immutable</h3>
+<p>In PHP, a string is a sequence of characters, and it’s implemented as a mutable data type. This means you can change a string’s contents directly by manipulating its individual characters or reassigning it without necessarily creating a new copy (though PHP’s internal memory management might create copies under certain conditions due to its copy-on-write mechanism).</p>
+<h4 id="example-1-modifying-a-string-directly">Example 1: Modifying a String Directly</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$string</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;a&#34;</span><span class="p">;</span> <span class="c1">// Change the second character
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$string</span><span class="p">;</span> <span class="c1">// Outputs: &#34;Hallo&#34;
+</span></span></span></code></pre></div><p>Here, the string <code>&quot;Hello&quot;</code> is modified in place by replacing the character at index 1 (<code>e</code>) with <code>a</code>. This demonstrates mutability—there’s no need to create a new string.</p>
+<h4 id="example-2-concatenation-with-assignment">Example 2: Concatenation with Assignment</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$string</span> <span class="o">.=</span> <span class="s2">&#34; World&#34;</span><span class="p">;</span> <span class="c1">// Append to the existing string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$string</span><span class="p">;</span> <span class="c1">// Outputs: &#34;Hello World&#34;
+</span></span></span></code></pre></div><p>The <code>.=</code> operator modifies <code>$string</code> by appending <code>&quot; World&quot;</code> to it. While PHP might allocate new memory behind the scenes if needed, from the programmer’s perspective, the original variable is updated directly.</p>
+<h4 id="example-3-using-string-functions">Example 3: Using String Functions</h4>
+<p>Some PHP string functions return new strings rather than modifying the original, but this is a design choice of the function, not a requirement of string immutability. For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$newString</span> <span class="o">=</span> <span class="nx">strtoupper</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span> <span class="c1">// Returns a new string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$string</span><span class="p">;</span>    <span class="c1">// Outputs: &#34;Hello&#34; (unchanged)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$newString</span><span class="p">;</span> <span class="c1">// Outputs: &#34;HELLO&#34;
+</span></span></span></code></pre></div><p>However, you can still modify the original string by reassigning:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$string</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$string</span> <span class="o">=</span> <span class="nx">strtoupper</span><span class="p">(</span><span class="nv">$string</span><span class="p">);</span> <span class="c1">// Reassign to modify
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$string</span><span class="p">;</span> <span class="c1">// Outputs: &#34;HELLO&#34;
+</span></span></span></code></pre></div><h4 id="why-are-strings-mutable-in-php">Why Are Strings Mutable in PHP?</h4>
+<p>PHP’s design prioritizes simplicity and flexibility over strict immutability. Here’s why strings are mutable in PHP:</p>
+<ol>
+<li>
+<p><strong>Performance and Ease of Use</strong>:</p>
+<ul>
+<li>Allowing direct modification of strings avoids the overhead of constantly creating new objects, which is especially useful in a dynamically typed, interpreted language like PHP where developers often manipulate strings heavily (e.g., in web development).</li>
+<li>It aligns with PHP’s pragmatic approach, making string handling intuitive for tasks like building HTML or processing user input.</li>
+</ul>
+</li>
+<li>
+<p><strong>No String Pool</strong>:</p>
+<ul>
+<li>Unlike Java, PHP doesn’t maintain a string pool for reusing string literals. Strings are treated as regular variables, and their mutability fits PHP’s memory model, which uses a copy-on-write mechanism to optimize memory usage. When a string is modified, PHP only creates a new copy if the original is shared elsewhere.</li>
+</ul>
+</li>
+<li>
+<p><strong>Historical Context</strong>:</p>
+<ul>
+<li>PHP evolved from a simple scripting language for web tasks, where mutability was more practical than enforcing immutability. It wasn’t designed with the same object-oriented rigor as Java, where immutability supports thread safety and security.</li>
+</ul>
+</li>
+</ol>
+<h4 id="copy-on-write-in-php">Copy-on-Write in PHP</h4>
+<p>While strings are mutable, PHP uses a <strong>copy-on-write</strong> strategy to manage memory efficiently. When you assign a string to another variable, PHP doesn’t immediately duplicate the data—it shares the memory until a modification occurs:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-php" data-lang="php"><span class="line"><span class="cl"><span class="nv">$a</span> <span class="o">=</span> <span class="s2">&#34;Hello&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$b</span> <span class="o">=</span> <span class="nv">$a</span><span class="p">;</span> <span class="c1">// $b shares the same memory as $a
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nv">$b</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;J&#34;</span><span class="p">;</span> <span class="c1">// Now $b gets its own copy
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$a</span><span class="p">;</span> <span class="c1">// Outputs: &#34;Hello&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">echo</span> <span class="nv">$b</span><span class="p">;</span> <span class="c1">// Outputs: &#34;Jello&#34;
+</span></span></span></code></pre></div><p>This isn’t immutability—it’s an optimization. The original string <code>$a</code> remains unchanged only because <code>$b</code> was modified, triggering a copy.</p>
+<h4 id="comparison-with-immutable-strings-eg-java">Comparison with Immutable Strings (e.g., Java)</h4>
+<p>In contrast, Java’s immutable strings force the creation of new objects for every change:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;Hello&#34;</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&#34; World&#34;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Creates a new String object</span><span class="w">
+</span></span></span></code></pre></div><p>In PHP, concatenation or character replacement modifies the string directly (or reassigns it), without the strict “new object” paradigm.</p>
+<h4 id="key-takeaways">Key Takeaways</h4>
+<ul>
+<li><strong>PHP strings are mutable</strong>: You can change them in place using operators like <code>[]</code> or <code>.=</code>.</li>
+<li>Mutability simplifies string manipulation, aligning with PHP’s practical, web-focused design.</li>
+<li>PHP’s copy-on-write mechanism ensures memory efficiency without enforcing immutability.</li>
+<li>If you need immutable-like behavior in PHP, you’d have to enforce it manually (e.g., by avoiding direct modifications and using functions that return new strings).</li>
+</ul>
+
+</main>
+</div>
+<footer>
+  <div class="footer-wrapper">
+    <p>Made with ❤️ &mdash; Powered by <a href="https://gohugo.io/" target="_blank"
+        rel="external">Hugo</a> </p>
+    <p>© copyright 2024</p>
+  </div>
+</footer>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600|Raleway:400,400i,600" rel="stylesheet">
+
+<script type="text/javascript">
+  document.querySelector('.mobile-header').addEventListener('click', function () {
+    var om = document.querySelector(".overlay-menu");
+    if (document.querySelector('.hamburger').classList.contains("cross")) {
+      document.querySelector('.hamburger').classList.remove("cross");
+      om.style.display = "none";
+      om.style.width = "0%";
+      om.style.height = "0%";
+    }
+    else {
+      document.querySelector('.hamburger').classList.add("cross");
+      om.style.width = "100%";
+      om.style.height = "100vh";
+      om.style.display = "block";
+    }
+  });
+</script>
+</body>
+
+</html>

@@ -2,38 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Designs on Tejiri Mayone</title>
-    <link>https://tejirimayone.com.ng/designs/</link>
+    <link>http://localhost:1313/designs/</link>
     <description>Recent content in Designs on Tejiri Mayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
-    <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate><atom:link href="https://tejirimayone.com.ng/designs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/designs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSS</title>
-      <link>https://tejirimayone.com.ng/designs/css/</link>
+      <link>http://localhost:1313/designs/css/</link>
       <pubDate>Tue, 02 Jul 2024 15:28:41 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/designs/css/</guid>
+      <guid>http://localhost:1313/designs/css/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>HTML</title>
-      <link>https://tejirimayone.com.ng/designs/html/</link>
+      <link>http://localhost:1313/designs/html/</link>
       <pubDate>Tue, 02 Jul 2024 15:28:41 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/designs/html/</guid>
+      <guid>http://localhost:1313/designs/html/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Javascript</title>
-      <link>https://tejirimayone.com.ng/designs/javascript/</link>
+      <link>http://localhost:1313/designs/javascript/</link>
       <pubDate>Tue, 02 Jul 2024 15:28:41 +0100</pubDate>
-      
-      <guid>https://tejirimayone.com.ng/designs/javascript/</guid>
+      <guid>http://localhost:1313/designs/javascript/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
