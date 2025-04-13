@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Tejiri Mayone</title>
-    <link>http://localhost:1313/techs/javascript/</link>
+    <link>https://tejirimayone.com.ng/techs/javascript/</link>
     <description>Recent content in Javascript on Tejiri Mayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
     <lastBuildDate>Tue, 02 Jul 2024 10:35:11 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/techs/javascript/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tejirimayone.com.ng/techs/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Legislative Initiative For Sustainable Development :Wordpress</title>
-      <link>http://localhost:1313/portfolio/lisdel/</link>
+      <link>https://tejirimayone.com.ng/portfolio/lisdel/</link>
       <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
-      <guid>http://localhost:1313/portfolio/lisdel/</guid>
+      <guid>https://tejirimayone.com.ng/portfolio/lisdel/</guid>
       <description>Description LISDEL Wordpress site, is a NGO website crafted with SEO excellence for optimal visibility. Navigate through captivating sliders and a stunning picture gallery, all seamlessly built with Elementor for a fluid, engaging user experience.&#xA;Key Features SEO Optimization: The site is fully optimized for search engines, ensuring higher visibility and better ranking on search results. This includes keyword integration, meta tags, and fast loading times.&#xA;Sliders: Dynamic sliders are integrated on the homepage and key landing pages, offering a visually stunning way to showcase featured content, promotions, and announcements.</description>
     </item>
   </channel>

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CSS on Tejiri Mayone</title>
-    <link>http://localhost:1313/designs/css/</link>
+    <link>https://tejirimayone.com.ng/designs/css/</link>
     <description>Recent content in CSS on Tejiri Mayone</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© copyright 2024</copyright>
     <lastBuildDate>Tue, 02 Jul 2024 15:28:41 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/designs/css/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://tejirimayone.com.ng/designs/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Samish Real Estate :Wordpress</title>
-      <link>http://localhost:1313/portfolio/samish/</link>
+      <link>https://tejirimayone.com.ng/portfolio/samish/</link>
       <pubDate>Tue, 02 Jul 2024 15:28:41 +0100</pubDate>
-      <guid>http://localhost:1313/portfolio/samish/</guid>
+      <guid>https://tejirimayone.com.ng/portfolio/samish/</guid>
       <description>Overview I had the privilege of developing a comprehensive website for Samish Real Estate Company, a leading construction company. This project involved implementing several advanced features to ensure the site is secure, functional, and user-friendly.&#xA;Features SSL Certification Security First: Implemented SSL certification to ensure all data transmitted between the user&amp;rsquo;s browser and the website is encrypted and secure. This not only protects user data but also builds trust with clients visiting the site.</description>
     </item>
     <item>
       <title>Legislative Initiative For Sustainable Development :Wordpress</title>
-      <link>http://localhost:1313/portfolio/lisdel/</link>
+      <link>https://tejirimayone.com.ng/portfolio/lisdel/</link>
       <pubDate>Tue, 02 Jul 2024 10:35:11 +0100</pubDate>
-      <guid>http://localhost:1313/portfolio/lisdel/</guid>
+      <guid>https://tejirimayone.com.ng/portfolio/lisdel/</guid>
       <description>Description LISDEL Wordpress site, is a NGO website crafted with SEO excellence for optimal visibility. Navigate through captivating sliders and a stunning picture gallery, all seamlessly built with Elementor for a fluid, engaging user experience.&#xA;Key Features SEO Optimization: The site is fully optimized for search engines, ensuring higher visibility and better ranking on search results. This includes keyword integration, meta tags, and fast loading times.&#xA;Sliders: Dynamic sliders are integrated on the homepage and key landing pages, offering a visually stunning way to showcase featured content, promotions, and announcements.</description>
     </item>
     <item>
       <title>Sterock Engineering Limited :Wordpress</title>
-      <link>http://localhost:1313/portfolio/sterockengineeringlimited/</link>
+      <link>https://tejirimayone.com.ng/portfolio/sterockengineeringlimited/</link>
       <pubDate>Thu, 30 Mar 2023 16:52:42 +0100</pubDate>
-      <guid>http://localhost:1313/portfolio/sterockengineeringlimited/</guid>
+      <guid>https://tejirimayone.com.ng/portfolio/sterockengineeringlimited/</guid>
       <description>Project Overview Sterock Engineering Limited is a leading construction company, and I had the privilege of developing their official website. This project was aimed at creating a secure, modern, and highly functional online presence that meets the company&amp;rsquo;s needs and enhances their digital footprint.&#xA;Key Features SSL Certificate To ensure the security and privacy of user data, I implemented an SSL certificate. This encrypts data transmitted between the users and the website, providing a secure browsing experience.</description>
     </item>
   </channel>
