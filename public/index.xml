@@ -10,6 +10,13 @@
     <lastBuildDate>Sun, 13 Apr 2025 20:04:31 +0100</lastBuildDate>
     <atom:link href="https://tejirimayone.com.ng/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Applicant Tracking System (ATS)</title>
+      <link>https://tejirimayone.com.ng/portfolio/atsystems/</link>
+      <pubDate>Sun, 13 Apr 2025 20:04:31 +0100</pubDate>
+      <guid>https://tejirimayone.com.ng/portfolio/atsystems/</guid>
+      <description>Project Overview The Applicant Management System is a full-stack web application I developed to streamline applicant data management and document generation. Built with Laravel for a robust backend and Angular for a dynamic frontend, this system enables administrators to manage applicant records, filter data interactively, and generate consolidated PDF reports from various file types (DOCX, PDFs, images). Hosted on AWS, it demonstrates my expertise in delivering scalable, user-focused solutions.&#xA;Technologies Used Backend: PHP, Laravel, DomPDF, Fpdi, PhpWord</description>
+    </item>
+    <item>
       <title>Resolving CORS Issues in Laravel Sanctum on Shared Hosting</title>
       <link>https://tejirimayone.com.ng/post/resolving_cors_issues_in_laravel_sanctum_on_shared_hosting/</link>
       <pubDate>Sun, 13 Apr 2025 20:04:31 +0100</pubDate>
